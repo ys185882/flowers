@@ -18,101 +18,7 @@
 				</wc-swiper>
 			</el-row>
 			<br>
-			<el-row class="fz">
-				<el-col :span="6">
-					<i class="el-icon-circle-check"></i>认准龙头企业
-				</el-col>
-				<el-col :span="6">
-					<i class="el-icon-circle-check"></i>15年品牌
-				</el-col>
-				<el-col :span="6">
-					<i class="el-icon-circle-check"></i>3小时送花
-				</el-col>
-				<el-col :span="6">
-					<i class="el-icon-circle-check"></i>
-					最近条好评
-				</el-col>
-			</el-row>
-			<br>
-			<div class="flowers">
-				<img src="../assets/flower.png">
-				<div>鲜花</div>
-			</div>
-			<div class="flowers">
-				<img src="../assets/flower2.png">
-				<div>永生花</div>
-			</div>
-			<div class="flowers">
-				<img src="../assets/dangao.png">
-				<div>蛋糕</div>
-			</div>
-			<div class="flowers">
-				<img src="../assets/liwu.png">
-				<div>礼物</div>
-			</div>
-			<div class="flowers">
-				<img src="../assets/pay.png">
-				<div>企业团购</div>
-			</div>
-			<div class="navPhoto">
-				<img src="../assets/nav.jpg" alt="">
-			</div>
-			<el-row class="ybBox">
-				<el-col :span="6" class="yb">
-					<div>
-						<br>
-						热销花篮
-						<br>
-						+月饼组合
-						<br>
-						￥299
-					</div>
-					<div>
-						<img src="../assets/yb.jpg" alt="">
-					</div>
-				</el-col>
-				<el-col :span="6" class="yb">
-					<div>
-						<br>
-						热销花篮
-						<br>
-						+月饼组合
-						<br>
-						￥299
-					</div>
-					<div>
-						<img src="../assets/yb.jpg" alt="">
-					</div>
-				</el-col>
-			</el-row>
-			<el-row class="ybBox">
-				<el-col :span="6" class="yb">
-					<div>
-						<br>
-						热销花篮
-						<br>
-						+月饼组合
-						<br>
-						￥299
-					</div>
-					<div>
-						<img src="../assets/yb.jpg" alt="">
-					</div>
-				</el-col>
-				<el-col :span="6" class="yb">
-					<div>
-						<br>
-						热销花篮
-						<br>
-						+月饼组合
-						<br>
-						￥299
-					</div>
-					<div>
-						<img src="../assets/yb.jpg" alt="">
-					</div>
-				</el-col>
-			</el-row>
+			<Section></Section>
 			<br>
 			<div class="Flowers">
 				<div class="one">| 一秒选花</div>
@@ -159,19 +65,47 @@
 			<div>
 				<el-row>
 					<el-col :span="12" class="hot">
-						<div></div>
+						<div>
+							热销榜
+							<br>
+							集万千宠爱
+						</div>
 						<div></div>
 					</el-col>
 					<el-col :span="12" class="onsale">
-						<div></div>
-						<div></div>
+						<div>
+							特价专区
+							<br>
+							超值好货
+						</div>
 					</el-col>
 				</el-row>
 			</div>
 		</div>
+		<div class="Footer">
+			<el-row>
+				<el-col :span="6">
+					<i class="el-icon-s-home"></i>
+					<p>首页</p>
+				</el-col>
+				<el-col :span="6">
+					<i class="el-icon-search"></i>
+					<p>分类</p>
+				</el-col>
+				<el-col :span="6">
+					<i class="el-icon-shopping-cart-2"></i>
+					<p>购物车</p>
+				</el-col>
+				<el-col :span="6">
+					<i class="el-icon-user"></i>
+					<p>我的</p>
+				</el-col>
+			</el-row>
+		</div>
 	</div>
 </template>
 <script>
+import Section from '@/components/Section'
 export default{
 	name: 'Home',
 	data(){
@@ -183,15 +117,20 @@ export default{
 			"/static/lunbotu/4.jpg",
 			"/static/lunbotu/5.jpg"
 		]}
+	},
+	components:{
+		Section
 	}
 }
+// console.log(sections)
 </script>
-<style scoped>
+<style scoped lang="less">
 	*{
 		padding:0;
 		margin:0;
 	}
 	.Box{
+		background-color:#e9ecf0;
 		margin:auto;
 		max-width: 640px;
 		width: 100%;
@@ -222,37 +161,6 @@ export default{
 		width: 100%;
 		touch-action: none;
 	}
-	.el-icon-circle-check{
-		border-radius: 10px;
-		background-color:#435448;
-		color:white;
-	}
-	.flowers{
-		text-align: center;
-		display: inline-block;
-		width: 18%;
-	}
-	.navPhoto{
-		margin:-4px;
-	}
-	.navPhoto img,.flowers img{
-		width: 100%;
-	}
-	.yb,.yb div{
-		text-align: center;
-		width:50%;
-		float:left;
-	}
-	.yb img{
-		width: 100%;
-	}
-	.ybBox{
-		background-color:#a7212a;
-	}
-	.ybBox .yb{
-		background-color:white;
-		border:10px solid #a7212a;
-	}
 	.Flowers{
 		text-align: center;
 		font-size: 25px;
@@ -269,6 +177,17 @@ export default{
 	.flowerS div{
 		background-color:#f7f9fa;
 		font-size: 20px;
+	}
+	.Footer{
+		border:;
+		padding-top:10px;
+		max-height:80px;
+		text-align: center;
+		.el-icon-s-home{
+			display:inline-block;
+			height:50%;
+			width:50%;
+		}
 	}
 /*	.fz{
 		font-size: 10px;
