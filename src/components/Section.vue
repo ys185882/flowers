@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="flowersBox">
 	<el-row class="fz">
 		<el-col :span="6">
 			<i class="el-icon-circle-check"></i>认准龙头企业
@@ -16,27 +16,26 @@
 		</el-col>
 	</el-row>
 	<br>
-	<div class="flowers">
-		<img src="../assets/flower.png">
-		<div>鲜花</div>
-	</div>
-	<div class="flowers">
-		<img src="../assets/flower2.png">
-		<div>永生花</div>
-	</div>
-	<div class="flowers">
-		<img src="../assets/dangao.png">
-		<div>蛋糕</div>
-	</div>
-	<div class="flowers">
-		<img src="../assets/liwu.png">
-		<div>礼物</div>
-	</div>
-	<div class="flowers">
-		<img src="../assets/pay.png">
-		<div>企业团购</div>
-	</div>
-	<br>
+		<div class="flowers">
+			<img src="../assets/flower.png">
+			<div>鲜花</div>
+		</div>
+		<div class="flowers">
+			<img src="../assets/flower2.png">
+			<div>永生花</div>
+		</div>
+		<div class="flowers">
+			<img src="../assets/dangao.png">
+			<div>蛋糕</div>
+		</div>
+		<div class="flowers">
+			<img src="../assets/liwu.png">
+			<div>礼物</div>
+		</div>
+		<div class="flowers">
+			<img src="../assets/pay.png">
+			<div>企业团购</div>
+		</div>
 	<br>
 	<br>
 	<div class="navPhoto">
@@ -106,21 +105,32 @@ export default{
 	name:'Section'
 }
 </script>
-<style>
+<style lang="less">
+	.fz{
+		padding:10px;
+		font-size:12px;
+	}
 	.el-icon-circle-check{
 		border-radius: 10px;
 		background-color:#435448;
 		color:white;
 	}
+	.flowersBox{
+		background-color: white;
+	}
 	.flowers{
+		font-size:12px;
 		text-align: center;
 		display: inline-block;
 		width: 18%;
+		img{
+			width:80%;
+		}
 	}
 	.navPhoto{
 		margin:-4px;
 	}
-	.navPhoto img,.flowers img{
+	.navPhoto img{
 		width: 100%;
 	}
 	.yb,.yb div{
@@ -138,5 +148,4 @@ export default{
 		background-color:white;
 		border:10px solid #a7212a;
 	}
-
 </style>
