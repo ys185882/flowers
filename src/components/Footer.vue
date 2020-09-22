@@ -52,30 +52,6 @@
 			<p>中国鲜花网领先品牌，鲜花速递专家！</p>
 			<p>深圳市百易信息技术有限公司  粤ICP备09171662号</p>
 		</div>
-		<div class="Footer">
-			<el-row>
-				<el-col :span="6">
-					<router-link to="/">
-						<i class="el-icon-s-home home"></i>
-						<p class="home">首页</p>
-					</router-link>
-				</el-col>
-				<el-col :span="6">
-					<router-link to="/classification/Classs" class="Link">
-						<i class="el-icon-search"></i>
-						<p>分类</p>
-					</router-link>
-				</el-col>
-				<el-col :span="6">
-					<i class="el-icon-shopping-cart-2"></i>
-					<p>购物车</p>
-				</el-col>
-				<el-col :span="6">
-					<i class="el-icon-user"></i>
-					<p>我的</p>
-				</el-col>
-			</el-row>
-		</div>
 	</div>
 </template>
 <script>
@@ -116,25 +92,5 @@ export default{
 		font-size: 12px;
 		color:#b4babf;
 		padding:20px;
-	}
-	.Footer{
-		background-color:#f7f9fa;
-		width:100%;
-		padding:5px;
-		max-height:80px;
-		text-align: center;
-		position: fixed;
-		bottom:0;
-		left:0;
-		.el-icon-s-home,.el-icon-search,.el-icon-shopping-cart-2,.el-icon-user{
-			font-size: 25px;
-		}
-		.home{
-			color:#ff734c;
-		}
-	}
-	.Link{
-		color:black;
-		text-decoration-style: none;
 	}
 </style>

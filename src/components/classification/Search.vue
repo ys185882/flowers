@@ -37,6 +37,8 @@ export default{
 </script>
 <style lang="less" scoped>
 	.Search{
+    height:100%;
+    background-color:white;
 		padding-top:73px;
 	}
 	.headerbox{
@@ -90,6 +92,8 @@ export default{
     }
   }
   .section{
+    max-width:640px;
+    margin:auto;
   	padding:30px;
   	div{
   		font-size:20px;

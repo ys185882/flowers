@@ -15,50 +15,26 @@
             <router-link to="/classification/Hot" class="hot">热门推荐</router-link>
           </div>
           <div>
-            <router-link to="/classification/Hot" class="hot">鲜花</router-link>
+            <router-link to="/classification/Hot2" class="hot">鲜花</router-link>
           </div>
           <div>
-            <router-link to="/classification/Hot" class="hot">永生花</router-link>
+            <router-link to="/classification/Hot3" class="hot">永生花</router-link>
           </div>
           <div>
-            <router-link to="/classification/Hot" class="hot">蛋糕</router-link>
+            <router-link to="/classification/Hot4" class="hot">蛋糕</router-link>
           </div>
           <div>
-            <router-link to="/classification/Hot" class="hot">特色礼品</router-link>
+            <router-link to="/classification/Hot5" class="hot">特色礼品</router-link>
           </div>
           <div>
-            <router-link to="/classification/Hot" class="hot">礼篮</router-link>
+            <router-link to="/classification/Hot6" class="hot">礼篮</router-link>
           </div>
           <div>
-            <router-link to="/classification/Hot" class="hot">绿植花卉</router-link>
+            <router-link to="/classification/Hot7" class="hot">绿植花卉</router-link>
           </div>
         </el-col>
         <el-col :span="18" class="view">
           <router-view></router-view>
-        </el-col>
-      </el-row>
-    </div>
-    <div class="Footer">
-      <el-row>
-        <el-col :span="6">
-          <router-link to="/">
-            <i class="el-icon-s-home home"></i>
-            <p class="home">首页</p>
-          </router-link>
-        </el-col>
-        <el-col :span="6">
-          <router-link to="/classification/Classs" class="Link">
-            <i class="el-icon-search classs"></i>
-            <p class="classs">分类</p>
-          </router-link>
-        </el-col>
-        <el-col :span="6">
-          <i class="el-icon-shopping-cart-2"></i>
-          <p>购物车</p>
-        </el-col>
-        <el-col :span="6">
-          <i class="el-icon-user"></i>
-          <p>我的</p>
         </el-col>
       </el-row>
     </div>
@@ -70,23 +46,26 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-*{
-  padding:0;
-  margin:0;
-}
+  *{
+    padding:0;
+    margin:0;
+  }
   .Box{
+    background-color:white;
     margin:auto;
     max-width: 640px;
     padding-top:73px;
   }
   .searchBox{
+    box-sizing:border-box;
+    padding:10px;
+    border-bottom:1px solid #f1f3f6;
+    width:100%;
     color:#b0b3b6;
+    max-width:640px;
+    background-color:white;
     position:fixed;
     top:0;
-    left:0;
-    width:100%;
-    background-color:white;
-    padding:10px;
     z-index:10;
     .search{
       margin:auto;
@@ -104,31 +83,18 @@ export default {
     div{
       padding:20px 0;
       .hot{
-        font-size:20px;
+        display: inline-block;
+        width:95%;
+        font-size:25px;
         color:black;
       } 
+      .router-link-active{
+        border-left:3px solid #ff734c;
+        color:#ff805c;
+      }
     }
     .view{
       padding:20px;
-    }
-  }
-  .Footer{
-    background-color:#f7f9fa;
-    width:100%;
-    padding:5px;
-    max-height:80px;
-    text-align: center;
-    position: fixed;
-    bottom:0;
-    left:0;
-    .el-icon-s-home,.el-icon-search,.el-icon-shopping-cart-2,.el-icon-user{
-      font-size: 25px;
-    }
-    .home{
-      color:black;
-    }
-    .classs{
-      color:#ff734c;
     }
   }
 </style>

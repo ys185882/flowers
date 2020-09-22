@@ -105,7 +105,7 @@ export default{
 	name:'Section'
 }
 </script>
-<style lang="less">
+<style lang="less" scoped>
 	.fz{
 		padding:10px;
 		font-size:12px;
@@ -128,7 +128,8 @@ export default{
 		}
 	}
 	.navPhoto{
-		margin:-4px;
+		max-width:640px;
+		margin-bottom:-4px;
 	}
 	.navPhoto img{
 		width: 100%;
