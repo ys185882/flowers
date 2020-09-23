@@ -16,10 +16,11 @@
 		</nav>
 		<div class="headerbox">
 			<div class="header">
-				<img src="../../assets/personalcenter/headerphoto.jpg" alt="">
-				<span>国服增幅王</span>
+				<span>Hi,欢迎来到花礼网</span>
 				<br>
-				<button><i></i>注册会员</button>
+				<router-link to="/">
+					<button>登录/注册</button>
+				</router-link>
 			</div>
 			<div class="sectionbox">
 				<div class="section">
@@ -94,25 +95,25 @@
 		<div class="Footer">
       <el-row>
         <el-col :span="6">
-          <router-link to="/components/Home" class="Links">
+          <router-link to="/components/Home2" class="Links">
             <i class="el-icon-s-home"></i>
             <p>首页</p>
           </router-link>
         </el-col>
         <el-col :span="6">
-          <router-link to="/classification/Classs" class="Links">
+          <router-link to="/classification/Classs2" class="Links">
             <i class="el-icon-search"></i>
             <p>分类</p>
           </router-link>
         </el-col>
         <el-col :span="6">
-					<router-link to="/shoppingcar/ShoppingCar" class="Links">
+					<router-link to="/shoppingcar/ShoppingCar2" class="Links">
 						<i class="el-icon-shopping-cart-2"></i>
 						<p>购物车</p>
 					</router-link>
 				</el-col>
         <el-col :span="6">
-        	<router-link to="/personalcenter/PersonalCenter" class="personal">
+        	<router-link to="/personalcenter/PersonalCenter2" class="personal">
 	          <i class="el-icon-user"></i>
 	          <p>我的</p>
           </router-link>
@@ -176,31 +177,25 @@ export default{
 		max-width:640px;
 		background-color:orange;
 		padding:20px 0;
-		height:100px;
+		height:150px;
 		.header{
 			width:200px;
 			height:100%;
 			margin:auto;
-			img{
-				width:40%;
-				border-radius:50%;
-				float:left;
-			}
+			text-align:center;
 			span{
 				color:white;
-				margin:10px;
-				float:left;
+				font-size:20px;
 			}
 			button{
-				float:left;
-				margin-left:10px;
-				background-color:#fe6600;
-				color:white;
+				margin-top:20px;
+				width:180px;
+				height:60px;
+				background-color:white;
 				border:none;
 				outline:none;
-				height:20px;
-				width:80px;
-				border-radius:20px;
+				border-radius:30px;
+				font-size:20px;
 			}
 		}
 		.sectionbox{

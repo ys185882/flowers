@@ -55,25 +55,25 @@
     <div class="Footer">
       <el-row>
         <el-col :span="6">
-          <router-link to="/components/Home" class="Homes">
+          <router-link to="/components/Home2" class="Homes2">
             <i class="el-icon-s-home"></i>
             <p>首页</p>
           </router-link>
         </el-col>
         <el-col :span="6">
-          <router-link to="/classification/Classs" class="Links">
+          <router-link to="/classification/Classs2" class="Links">
             <i class="el-icon-search"></i>
             <p>分类</p>
           </router-link>
         </el-col>
-        	<el-col :span="6">
-				<router-link to="/shoppingcar/ShoppingCar" class="Links">
-					<i class="el-icon-shopping-cart-2"></i>
-					<p>购物车</p>
-				</router-link>
-			</el-col>
         <el-col :span="6">
-        	<router-link to="/personalcenter/PersonalCenter" class="Links">
+					<router-link to="/shoppingcar/ShoppingCar2" class="Links">
+						<i class="el-icon-shopping-cart-2"></i>
+						<p>购物车</p>
+					</router-link>
+				</el-col>
+        <el-col :span="6">
+        	<router-link to="/personalcenter/PersonalCenter2" class="Links">
 	          <i class="el-icon-user"></i>
 	          <p>我的</p>
           </router-link>
@@ -84,7 +84,7 @@
 </template>
 <script>
 export default{
-	name:'Footer'
+	name:'Footer2'
 }
 </script>
 <style scoped lang="less">
@@ -133,7 +133,7 @@ export default{
     .el-icon-s-home,.el-icon-search,.el-icon-shopping-cart-2,.el-icon-user{
       font-size: 25px;
     }
-    .Homes{
+    .Homes2{
     	color:#ff734c;
     }
 		.Links{

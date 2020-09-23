@@ -3,7 +3,11 @@
 		<nav>
 			<el-row>
 				<el-col :span="1">
-					<i class="el-icon-arrow-left"></i>
+					<div class="backTo">
+					    <span @click="back">
+							<i class="el-icon-arrow-left"></i>
+						</span>
+					</div>
 				</el-col>
 				<el-col :span="23">
 					<span>购物车</span>
@@ -76,12 +80,45 @@
 				</el-col>
 			</el-row>
 		</section>
+    <div class="Footer">
+      <el-row>
+        <el-col :span="6">
+          <router-link to="/components/Home" class="Links">
+            <i class="el-icon-s-home"></i>
+            <p>首页</p>
+          </router-link>
+        </el-col>
+        <el-col :span="6">
+          <router-link to="/classification/Classs" class="Links">
+            <i class="el-icon-search"></i>
+            <p>分类</p>
+          </router-link>
+        </el-col>
+        <el-col :span="6">
+					<router-link to="/shoppingcar/ShoppingCar" class="shopping">
+						<i class="el-icon-shopping-cart-2"></i>
+						<p>购物车</p>
+					</router-link>
+				</el-col>
+        <el-col :span="6">
+        	<router-link to="/personalcenter/PersonalCenter" class="Links">
+	          <i class="el-icon-user"></i>
+	          <p>我的</p>
+          </router-link>
+        </el-col>
+      </el-row>
+    </div>
 		<footer>已经到底喽...</footer>
 	</div>
 </template>
 <script>
 export default{
-	name:'ShoppingCar'
+	name:'ShoppingCar',
+	methods:{
+	    back(){
+	        this.$router.go(-1);
+	    },
+	}
 }
 </script>
 <style scoped lang="less">
@@ -89,6 +126,7 @@ export default{
 		max-width: 640px;
 		margin:auto;
 	 	padding-bottom:50px;
+	 	background-color:#e9ecf0;
 	 }
 	nav{
 		background-color:white;
@@ -155,6 +193,27 @@ export default{
 			}
 		}
 	}
+	.Footer{
+    background-color:#f7f9fa;
+    width:100%;
+    padding:5px;
+    max-height:80px;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    left:0;
+    .el-icon-s-home,.el-icon-search,.el-icon-shopping-cart-2,.el-icon-user{
+      font-size: 25px;
+    }
+    .shopping{
+    	color:#ff734c;
+    }
+		.Links{
+			display: inline-block;
+			width:100%;
+			color:black;
+		}
+  }
 	footer{
 		background-color:white;
 		padding:10px 0 20px 0;

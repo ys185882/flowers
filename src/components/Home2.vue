@@ -25,7 +25,7 @@
 			<br>
 			<sendflowers></sendflowers>
 			<br>
-			<Footer></Footer>
+			<Footer2></Footer2>
 		</div>
 	</div>
 </template>
@@ -33,9 +33,9 @@
 import Section from '@/components/Section'
 import Flowerss from '@/components/Flowerss'
 import sendflowers from '@/components/sendflowers'
-import Footer from '@/components/Footer'
+import Footer2 from '@/components/Footer2'
 export default{
-	name: 'Home',
+	name: 'Home2',
 	data(){
 		return {
 			items: [
@@ -50,7 +50,7 @@ export default{
 		Section,
 		Flowerss,
 		sendflowers,
-		Footer
+		Footer2
 	}
 }
 </script>
@@ -63,7 +63,6 @@ export default{
 		background-color:#e9ecf0;
 	}
 	.Box{
-		background-color:#e9ecf0;
 		margin:auto;
 		max-width: 640px;
 		width: 100%;

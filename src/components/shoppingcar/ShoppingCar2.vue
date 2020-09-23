@@ -1,9 +1,14 @@
 <template>
 	<div class="Box">
+		<div class="shopping">
 		<nav>
 			<el-row>
 				<el-col :span="1">
-					<i class="el-icon-arrow-left"></i>
+					<div class="backTo">
+					    <span @click="back">
+							<i class="el-icon-arrow-left"></i>
+						</span>
+					</div>
 				</el-col>
 				<el-col :span="23">
 					<span>购物车</span>
@@ -11,7 +16,9 @@
 			</el-row>
 			<div class="register">
 				登录后将同步您的购物车商品
-				<button>登录</button>
+				<router-link to="/">
+					<button>登录</button>
+				</router-link>
 			</div>
 			<div class="photo">
 				<img src="../../assets/shoppingcar/m_shopping_empty_cart.png" alt="">
@@ -80,12 +87,46 @@
 				</el-col>
 			</el-row>
 		</section>
+		<div class="Footer">
+      <el-row>
+        <el-col :span="6">
+          <router-link to="/components/Home2" class="Links">
+            <i class="el-icon-s-home"></i>
+            <p>首页</p>
+          </router-link>
+        </el-col>
+        <el-col :span="6">
+          <router-link to="/classification/Classs2" class="Links">
+            <i class="el-icon-search"></i>
+            <p>分类</p>
+          </router-link>
+        </el-col>
+        <el-col :span="6">
+					<router-link to="/shoppingcar/ShoppingCar2" class="shopping">
+						<i class="el-icon-shopping-cart-2"></i>
+						<p>购物车</p>
+					</router-link>
+				</el-col>
+        <el-col :span="6">
+        	<router-link to="/personalcenter/PersonalCenter2" class="Links">
+	          <i class="el-icon-user"></i>
+	          <p>我的</p>
+          </router-link>
+        </el-col>
+      </el-row>
+    </div>
 		<footer>已经到底喽...</footer>
+		</div>
 	</div>
 </template>
 <script>
 export default{
-	name:'ShoppingCar2'
+	name:'ShoppingCar2',
+	methods:{
+	    back(){
+	        this.$router.go(-1);
+	    },
+	}
 }
 </script>
 <style scoped lang="less">
@@ -93,6 +134,7 @@ export default{
 		max-width: 640px;
 		margin:auto;
 	 	padding-bottom:50px;
+	 	background-color:#e9ecf0;
 	 }
 	nav{
 		background-color:white;
@@ -100,13 +142,15 @@ export default{
 		max-width: 640px;
 		text-align: center;
 		font-size:30px;
-		padding:20px;
+		padding-top:20px;
 		line-height: 50%;
 		.register{
+			margin-top:30px;
 			border:1px solid #ff734c;
 			font-size:20px;
 			text-align: center;
 			height: 67px;
+			line-height:67px;
 			width:100%;
 			background-color:#fff0ec;
 			button{
@@ -115,6 +159,7 @@ export default{
 				color:#ff734c;
 				border:1px solid #ff734c;
 				border-radius:30px;
+				margin-left:30px;
 			}
 		}
 		i{
@@ -174,6 +219,27 @@ export default{
 			}
 		}
 	}
+	.Footer{
+    background-color:#f7f9fa;
+    width:100%;
+    padding:5px;
+    max-height:80px;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    left:0;
+    .el-icon-s-home,.el-icon-search,.el-icon-shopping-cart-2,.el-icon-user{
+      font-size: 25px;
+    }
+    .shopping{
+    	color:#ff734c;
+    }
+		.Links{
+			display: inline-block;
+			width:100%;
+			color:black;
+		}
+  }
 	footer{
 		background-color:white;
 		padding:10px 0 20px 0;

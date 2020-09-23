@@ -41,25 +41,25 @@
     <div class="Footer">
       <el-row>
         <el-col :span="6">
-          <router-link to="/components/Home" class="Links">
+          <router-link to="/components/Home2" class="Links">
             <i class="el-icon-s-home"></i>
             <p>首页</p>
           </router-link>
         </el-col>
         <el-col :span="6">
-          <router-link to="/classification/Classs" class="classs">
+          <router-link to="/classification/Classs2" class="classs">
             <i class="el-icon-search"></i>
             <p>分类</p>
           </router-link>
         </el-col>
         <el-col :span="6">
-          <router-link to="/shoppingcar/ShoppingCar" class="Links">
+          <router-link to="/shoppingcar/ShoppingCar2" class="Links">
             <i class="el-icon-shopping-cart-2"></i>
             <p>购物车</p>
           </router-link>
         </el-col>
         <el-col :span="6">
-          <router-link to="/personalcenter/PersonalCenter" class="Links">
+          <router-link to="/personalcenter/PersonalCenter2" class="Links">
             <i class="el-icon-user"></i>
             <p>我的</p>
           </router-link>

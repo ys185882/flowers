@@ -6,34 +6,6 @@
 	    </div>
     </el-backtop>
     <router-view/>
-    <div class="Footer">
-      <el-row>
-        <el-col :span="6">
-          <router-link to="/">
-            <i class="el-icon-s-home"></i>
-            <p>首页</p>
-          </router-link>
-        </el-col>
-        <el-col :span="6">
-          <router-link to="/classification/Classs">
-            <i class="el-icon-search"></i>
-            <p>分类</p>
-          </router-link>
-        </el-col>
-        <el-col :span="6">
-					<router-link to="/shoppingcar/ShoppingCar">
-						<i class="el-icon-shopping-cart-2"></i>
-						<p>购物车</p>
-					</router-link>
-				</el-col>
-        <el-col :span="6">
-        	<router-link to="/personalcenter/PersonalCenter">
-	          <i class="el-icon-user"></i>
-	          <p>我的</p>
-          </router-link>
-        </el-col>
-      </el-row>
-    </div>
   </div>
 </template>
 
@@ -58,9 +30,7 @@ export default {
 	#app{
 		height:100%;
 		overflow-y: scroll;
-		.router-link-active {
-		  text-decoration: none;
-		}
+		background-color:white;
 		.top{
 			width:62px;
 			height:62px;
@@ -75,26 +45,5 @@ export default {
 	      color: black;
 			}
 		}
-		.Footer{
-	    background-color:#f7f9fa;
-	    width:100%;
-	    padding:5px;
-	    max-height:80px;
-	    text-align: center;
-	    position: fixed;
-	    bottom:0;
-	    left:0;
-	    .el-icon-s-home,.el-icon-search,.el-icon-shopping-cart-2,.el-icon-user{
-	      font-size: 25px;
-	    }
-			.Link{
-				display: inline-block;
-				width:100%;
-				color:black;
-			}
-	    .router-link-active{
-	     	color:#ff805c;
-	    }
-	  }
 	}
 </style>
