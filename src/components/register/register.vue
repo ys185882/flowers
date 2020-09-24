@@ -99,6 +99,8 @@ export default{
 </script>
 <style scoped lang="less">
 	.Box{
+		margin:auto;
+		max-width: 640px;
 		background-color:white;
 		height:100%;
 	 	.elbtn{

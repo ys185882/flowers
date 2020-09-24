@@ -17,6 +17,7 @@ import ShoppingCar2 from '@/components/shoppingcar/ShoppingCar2'
 import PersonalCenter from '@/components/personalcenter/PersonalCenter'
 import PersonalCenter2 from '@/components/personalcenter/PersonalCenter2'
 import Register from '@/components/register/Register'
+import Customerservice from '@/components/personalcenter/Customerservice'
 
 Vue.use(Router);
 
@@ -142,6 +143,11 @@ export default new Router({
       path:'/personalcenter/PersonalCenter2',
       name:'PersonalCenter2',
       component:PersonalCenter2
+    },
+    {
+      path:'/personalcenter/Customerservice',
+      name:'Customerservice',
+      component:Customerservice
     },
     {
       path:'/',

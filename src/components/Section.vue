@@ -42,58 +42,70 @@
 		<img src="../assets/nav.jpg" alt="">
 	</div>
 	<el-row class="ybBox">
-		<el-col :span="6" class="yb">
-			<div>
-				<br>
-				热销花篮
-				<br>
-				+月饼组合
-				<br>
-				￥299
-			</div>
-			<div>
-				<img src="../assets/yb.jpg" alt="">
+		<el-col :span="12" class="yb">
+			<div class='hualan'>
+				<el-row>
+					<el-col :span="12">
+						<div>
+							<header>热销花篮</header>
+							<p>+月饼组合</p>
+							<aside>￥299</aside>
+						</div>
+					</el-col>
+					<el-col :span="12">
+						<img src="../assets/yb.jpg" alt="">
+					</el-col>
+				</el-row>
 			</div>
 		</el-col>
-		<el-col :span="6" class="yb">
-			<div>
-				<br>
-				热销花篮
-				<br>
-				+月饼组合
-				<br>
-				￥299
-			</div>
-			<div>
-				<img src="../assets/yb.jpg" alt="">
+		<el-col :span="12" class="ybs">
+			<div class='hualan'>
+				<el-row>
+					<el-col :span="12">
+						<div>
+							<header>热销花篮</header>
+							<p>+月饼组合</p>
+							<aside>￥299</aside>
+						</div>
+					</el-col>
+					<el-col :span="12">
+						<img src="../assets/yb.jpg" alt="">
+					</el-col>
+				</el-row>
 			</div>
 		</el-col>
 	</el-row>
 	<el-row class="ybBox">
-		<el-col :span="6" class="yb">
-			<div>
-				<br>
-				热销花篮
-				<br>
-				+月饼组合
-				<br>
-				￥299
-			</div>
-			<div>
-				<img src="../assets/yb.jpg" alt="">
+		<el-col :span="12" class="Yb">
+			<div class='hualan'>
+				<el-row>
+					<el-col :span="12">
+						<div>
+							<header>热销花篮</header>
+							<p>+月饼组合</p>
+							<aside>￥299</aside>
+						</div>
+					</el-col>
+					<el-col :span="12">
+						<img src="../assets/yb.jpg" alt="">
+					</el-col>
+				</el-row>
 			</div>
 		</el-col>
-		<el-col :span="6" class="yb">
-			<div>
-				<br>
-				热销花篮
-				<br>
-				+月饼组合
-				<br>
-				￥299
-			</div>
-			<div>
-				<img src="../assets/yb.jpg" alt="">
+		<el-col :span="12" class="Ybs">
+			<div class='hualan'>
+				<el-row>
+					<el-col :span="12">
+						<div>
+							<header>热销花篮</header>
+							<p>+月饼组合</p>
+							<aside>￥299</aside>
+						</div>
+					</el-col>
+					<el-col :span="12">
+						<img src="../assets/yb.jpg" alt="">
+					</el-col>
+				</el-row>
 			</div>
 		</el-col>
 	</el-row>
@@ -117,9 +129,12 @@ export default{
 	}
 	.flowersBox{
 		background-color: white;
+		.fz{
+			font-size: 20px;
+		}
 	}
 	.flowers{
-		font-size:12px;
+		font-size:20px;
 		text-align: center;
 		display: inline-block;
 		width: 18%;
@@ -134,19 +149,111 @@ export default{
 	.navPhoto img{
 		width: 100%;
 	}
-	.yb,.yb div{
-		text-align: center;
-		width:50%;
-		float:left;
-	}
-	.yb img{
-		width: 100%;
-	}
 	.ybBox{
 		background-color:#a7212a;
-	}
-	.ybBox .yb{
-		background-color:white;
-		border:10px solid #a7212a;
+		.yb{
+			padding:15px 2px 5px 20px;
+			.hualan{
+				border-radius:10px;
+				background-color:white;
+				width:100%;
+				div{
+					padding:6px;
+					header{
+						font-size:25px;
+					}
+					p{
+						font-size: 20px;
+						color:#71797f;
+					}
+					aside{
+						margin-top: 20px;
+						font-size: 20px;
+						color:#ff734c;
+					}
+				}
+				img{
+					width:100%;
+				}
+			}
+		}
+		.ybs{
+			padding:15px 20px 5px 2px;
+			.hualan{
+				border-radius:10px;
+				background-color:white;
+				width:100%;
+				div{
+					padding:6px;
+					header{
+						font-size:25px;
+					}
+					p{
+						font-size: 20px;
+						color:#71797f;
+					}
+					aside{
+						margin-top: 20px;
+						font-size: 20px;
+						color:#ff734c;
+					}
+				}
+				img{
+					width:100%;
+				}
+			}
+		}
+		.Yb{
+			padding:3px 2px 15px 20px;
+			.hualan{
+				border-radius:10px;
+				background-color:white;
+				width:100%;
+				div{
+					padding:6px;
+					header{
+						font-size:25px;
+					}
+					p{
+						font-size: 20px;
+						color:#71797f;
+					}
+					aside{
+						margin-top: 20px;
+						font-size: 20px;
+						color:#ff734c;
+					}
+				}
+				img{
+					width:100%;
+				}
+			}
+		}
+		.Ybs{
+			padding:3px 20px 15px 2px;
+			.hualan{
+				border-radius:10px;
+				background-color:white;
+				width:100%;
+				div{
+					padding:6px;
+					header{
+						font-size:25px;
+					}
+					p{
+						font-size: 20px;
+						color:#71797f;
+					}
+					aside{
+						margin-top: 20px;
+						font-size: 20px;
+						color:#ff734c;
+					}
+				}
+				img{
+					width:100%;
+				}
+			}
+		}
 	}
 </style>

@@ -18,7 +18,9 @@
 			</div>
 			<div class="tt">购物车内暂时没有商品</div>
 			<div>
-				<button>去逛逛</button>
+				<router-link to="/components/Home">
+					<button>去逛逛</button>
+				</router-link>
 			</div>
 		</nav>
 		<section>

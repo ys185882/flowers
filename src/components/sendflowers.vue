@@ -6,15 +6,15 @@
 				<img src="../assets/meiguihua.jpg" alt="" class="photo">
 			</el-col>
 			<el-col :span="12">
-				<p>一往情深</p>
+				<p class="one">一往情深</p>
 				<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
-				<div>年销售冠军</div>
+				<button>年销售冠军</button>
 				<div class="champion">经典爆款，年销售冠军！</div>
 				<div class="shopping">
 					<el-row>
 						<el-col :span="20" class="pd">
 							<div>￥239 <s>￥315</s></div>
-							<div>已销售12.8万件</div>
+							<div class="xs">已销售12.8万件</div>
 						</el-col>
 						<el-col :span="4">
 							<i class="el-icon-shopping-cart-2"></i>
@@ -28,15 +28,15 @@
 				<img src="../assets/meiguihua.jpg" alt="" class="photo">
 			</el-col>
 			<el-col :span="12">
-				<p>一往情深</p>
+				<p class="one">一往情深</p>
 				<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
-				<div>年销售冠军</div>
+				<button>年销售冠军</button>
 				<div class="champion">经典爆款，年销售冠军！</div>
 				<div class="shopping">
 					<el-row>
 						<el-col :span="20" class="pd">
 							<div>￥239 <s>￥315</s></div>
-							<div>已销售12.8万件</div>
+							<div class="xs">已销售12.8万件</div>
 						</el-col>
 						<el-col :span="4">
 							<i class="el-icon-shopping-cart-2"></i>
@@ -50,15 +50,15 @@
 				<img src="../assets/meiguihua.jpg" alt="" class="photo">
 			</el-col>
 			<el-col :span="12">
-				<p>一往情深</p>
+				<p class="one">一往情深</p>
 				<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
-				<div>年销售冠军</div>
+				<button>年销售冠军</button>
 				<div class="champion">经典爆款，年销售冠军！</div>
 				<div class="shopping">
 					<el-row>
 						<el-col :span="20" class="pd">
 							<div>￥239 <s>￥315</s></div>
-							<div>已销售12.8万件</div>
+							<div class="xs">已销售12.8万件</div>
 						</el-col>
 						<el-col :span="4">
 							<i class="el-icon-shopping-cart-2"></i>
@@ -72,15 +72,15 @@
 				<img src="../assets/meiguihua.jpg" alt="" class="photo">
 			</el-col>
 			<el-col :span="12">
-				<p>一往情深</p>
+				<p class="one">一往情深</p>
 				<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
-				<div>年销售冠军</div>
+				<button>年销售冠军</button>
 				<div class="champion">经典爆款，年销售冠军！</div>
 				<div class="shopping">
 					<el-row>
 						<el-col :span="20" class="pd">
 							<div>￥239 <s>￥315</s></div>
-							<div>已销售12.8万件</div>
+							<div class="xs">已销售12.8万件</div>
 						</el-col>
 						<el-col :span="4">
 							<i class="el-icon-shopping-cart-2"></i>
@@ -94,15 +94,15 @@
 				<img src="../assets/meiguihua.jpg" alt="" class="photo">
 			</el-col>
 			<el-col :span="12">
-				<p>一往情深</p>
+				<p class="one">一往情深</p>
 				<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
-				<div>年销售冠军</div>
+				<button>年销售冠军</button>
 				<div class="champion">经典爆款，年销售冠军！</div>
 				<div class="shopping">
 					<el-row>
 						<el-col :span="20" class="pd">
 							<div>￥239 <s>￥315</s></div>
-							<div>已销售12.8万件</div>
+							<div class="xs">已销售12.8万件</div>
 						</el-col>
 						<el-col :span="4">
 							<i class="el-icon-shopping-cart-2"></i>
@@ -162,43 +162,73 @@ export default{
 		font-size: 15px;
 		background-color:white;
 		.title{
-			font-size:20px;
+			font-size:30px;
 			text-align: center;
 			padding:20px;
 		}
+		.one{
+			padding:0 10px;
+			font-size: 30px;
+		}
 		.of{
+			padding:0 10px;
+			font-size: 25px;
 			overflow: hidden;
 			text-overflow:ellipsis;
 			white-space: nowrap;
+		}
+		button{
+			color:white;
+			background-color:#ff734c;
+			border-radius:20px;
+			outline:none;
+			border:none;
+			font-size: 15px;
+			padding:5px 10px;
+			margin:10px;
 		}
 		.photo{
 			width: 95%;
 		}
 		.champion{
-			padding:20px 0;
+			font-size: 20px;
+			padding:25px 10px;
 			border-top:1px solid #e9ecf0;
 			border-bottom:1px solid #e9ecf0;
 		}
 		.shopping{
-			s{
-				font-size: 12px;
-				color:#e9ecf0;
-			}
+			padding:20px 10px;
 			i{
-				padding-top:20px
+				padding-top:25px;
+				font-size: 40px;
 			}
 			.pd{
 				padding-top:10px;
+				div{
+					font-size:30px;
+					color:#ff734c;
+				}
+				s{
+					font-size: 20px;
+					color:#71797f;
+				}
+				.xs{
+					font-size: 20px;
+					color:#71797f;
+				}
 			}
 		}
 		.more{
 			padding:20px;
 			text-align: center;
 			button{
-				padding:5px 25px;
+				padding:8px 40px;
 				background-color:white;
 				outline:none;
 				border:1px solid black;
+				border-radius:3px;
+				color:black;
+				font-size:20px;
 			}
 		}
 		.enterprise{

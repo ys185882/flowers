@@ -4,7 +4,11 @@
 	      <div class="header">
 	      	<el-row>
 		      	<el-col :span="2">
-		      		<i class="el-icon-arrow-left"></i>
+		      		<div class="backTo">
+                <span @click="back">
+                  <i class="el-icon-arrow-left"></i>
+                </span>
+              </div>
 		      	</el-col>
 		      	<el-col :span="18">
 		      		<div class="search">
@@ -32,7 +36,12 @@
 </template>
 <script>
 export default{
-	name:'Search'
+	name:'Search',
+  methods:{
+      back(){
+          this.$router.go(-1);
+      },
+  }
 }
 </script>
 <style lang="less" scoped>

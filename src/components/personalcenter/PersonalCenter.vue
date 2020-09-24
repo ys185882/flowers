@@ -4,14 +4,15 @@
 			<el-row>
 				<el-col :span="1">
 					<div class="backTo">
-					    <span @click="back">
+					  <span @click="back">
 							<i class="el-icon-arrow-left"></i>
 						</span>
 					</div>
 				</el-col>
-				<el-col :span="23">
+				<el-col :span="22">
 					<span>个人中心</span>
 				</el-col>
+				<el-col :span="1"></el-col>
 			</el-row>
 		</nav>
 		<div class="headerbox">
