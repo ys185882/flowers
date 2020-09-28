@@ -30,7 +30,7 @@ export default {
 	#app{
 		height:100%;
 		overflow-y: scroll;
-		background-color:white;
+		background-color:#e9ecf0;
 		.top{
 			width:62px;
 			height:62px;

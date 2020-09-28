@@ -63,26 +63,26 @@
 			<div class="First">
 				<el-row>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/youhui.png" alt="">
 						<router-link to="/">
+							<img src="../../assets/personalcenter/youhui.png" alt="">
 							<div>优惠券</div>
 						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/quanyi.png" alt="">
 						<router-link to="/">
+							<img src="../../assets/personalcenter/quanyi.png" alt="">
 							<div>权益卡</div>
 						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/yue.png" alt="">
 						<router-link to="/">
+							<img src="../../assets/personalcenter/yue.png" alt="">
 							<div>余额</div>
 						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/zuanshi.png" alt="">
 						<router-link to="/">
+							<img src="../../assets/personalcenter/zuanshi.png" alt="">
 							<div>会员积分</div>
 						</router-link>
 					</el-col>
@@ -138,9 +138,9 @@
 					</router-link>
 				</el-col>
         <el-col :span="6">
-        	<router-link to="/personalcenter/PersonalCenter2" class="personal">
-	          <i class="el-icon-user"></i>
-	          <p>我的</p>
+        	<router-link to="/personalcenter/PersonalCenter2">
+	          <i class="el-icon-user personal"></i>
+	          <p class="personal">我的</p>
           </router-link>
         </el-col>
       </el-row>
@@ -149,26 +149,26 @@
 			<div class="Ft">
 				<el-row class="ft">
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/kefu.png" alt="">
 						<router-link to="/personalcenter/Customerservice">
+							<img src="../../assets/personalcenter/kefu.png" alt="">
 							<div>联系客服</div>
 						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/help.png" alt="">
 						<router-link to="/">
+							<img src="../../assets/personalcenter/help.png" alt="">
 							<div>帮助中心</div>
 						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/guanyu.png" alt="">
-						<router-link to="/">
+						<router-link to="/personalcenter/about/About">
+							<img src="../../assets/personalcenter/guanyu.png" alt="">
 							<div>关于花礼</div>
 						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/shezhi.png" alt="">
 						<router-link to="/">
+							<img src="../../assets/personalcenter/shezhi.png" alt="">
 							<div>设置</div>
 						</router-link>
 					</el-col>

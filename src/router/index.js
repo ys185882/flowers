@@ -18,6 +18,13 @@ import PersonalCenter from '@/components/personalcenter/PersonalCenter'
 import PersonalCenter2 from '@/components/personalcenter/PersonalCenter2'
 import Register from '@/components/register/Register'
 import Customerservice from '@/components/personalcenter/Customerservice'
+import OnlineMessage from '@/components/personalcenter/OnlineMessage'
+import consult from '@/components/personalcenter/consult'
+import proposal from '@/components/personalcenter/proposal'
+import About from '@/components/personalcenter/about/About'
+import Culture from '@/components/personalcenter/about/Culture'
+import Dynamic from '@/components/personalcenter/about/Dynamic'
+import Media from '@/components/personalcenter/about/Media'
 
 Vue.use(Router);
 
@@ -148,6 +155,44 @@ export default new Router({
       path:'/personalcenter/Customerservice',
       name:'Customerservice',
       component:Customerservice
+    },
+    {
+      path:'/personalcenter/OnlineMessage',
+      name:'OnlineMessage',
+      component:OnlineMessage,
+      children:[
+      {
+        path:'/personalcenter/consult',
+        name:'consult',
+        component:consult
+      },
+      {
+        path:'/personalcenter/proposal',
+        name:'proposal',
+        component:proposal
+      }
+      ],
+      redirect:'/personalcenter/consult'
+    },
+    {
+      path:'/personalcenter/about/About',
+      name:'About',
+      component:About
+    },
+    {
+      path:'/personalcenter/about/Culture',
+      name:'Culture',
+      component:Culture
+    },
+    {
+      path:'/personalcenter/about/Dynamic',
+      name:'Dynamic',
+      component:Dynamic
+    },
+    {
+      path:'/personalcenter/about/Media',
+      name:'Media',
+      component:Media
     },
     {
       path:'/',
