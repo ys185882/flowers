@@ -201,7 +201,7 @@ export default{
 			border-radius:10px;
 			text-align: center;
 			width:90%;
-	    box-shadow: 0 0 6px rgba(0,0,0, .12);
+	    box-shadow: 0 0 10px rgba(0,0,0, .12);
 			img{
 				width:100%;
 			}

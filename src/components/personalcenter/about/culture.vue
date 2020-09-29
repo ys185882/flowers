@@ -91,6 +91,14 @@
 						</ul>
 					</div>
 				</div>
+				<div class="lunbo">
+					 <el-carousel :interval="4000" type="card" height="200px">
+				    <el-carousel-item v-for="item in items" :key="item">
+				      <img :src="item" alt="">
+				    </el-carousel-item>
+				  </el-carousel>
+				  <div>2019年10月·郴州之旅第二批小伙伴合影 2</div>
+				</div>
 			</section>
 	    <div class="Footer">
 	      <el-row>
@@ -124,7 +132,12 @@ export default{
 	name: 'Culture',
 	data(){
 		return {
-			show:false
+			show:false,
+			items: [
+			"/static/lunbo4/culture_happy_img_2.jpg",
+			"/static/lunbo4/culture_happy_img_7.jpg",
+			"/static/lunbo4/culture_happy_img_3.jpg"
+			]
 		}
 	},
 	methods: {
@@ -277,6 +290,17 @@ export default{
 						p{
 							font-size: 1.3rem;
 						}
+					}
+				}
+				.lunbo{
+					margin:150px 0;
+					width:100%;
+					.el-carousel__item img {
+				 		width:100%;
+					}
+					div{
+						text-align:center;
+						font-size: 1.5rem;
 					}
 				}
 			}

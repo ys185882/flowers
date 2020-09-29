@@ -12,7 +12,7 @@
 					<button>同城鲜花</button>
 				</el-col>
 				<el-col :span="6">
-					<button>华语大全</button>
+					<button>花语大全</button>
 				</el-col>
 			</el-row>
 			<br>

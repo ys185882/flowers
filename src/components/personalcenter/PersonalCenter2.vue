@@ -91,26 +91,26 @@
 			<div class="Two">
 				<el-row>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/dizhi.png" alt="">
 						<router-link to="/">
+							<img src="../../assets/personalcenter/dizhi.png" alt="">
 							<div>收货地址</div>
 						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/naozhong.png" alt="">
 						<router-link to="/">
+							<img src="../../assets/personalcenter/naozhong.png" alt="">
 							<div>生日纪念提醒</div>
 						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/colle.png" alt="">
 						<router-link to="/">
+							<img src="../../assets/personalcenter/colle.png" alt="">
 							<div>我的收藏</div>
 						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/biao.png" alt="">
 						<router-link to="/">
+							<img src="../../assets/personalcenter/biao.png" alt="">
 							<div>浏览记录</div>
 						</router-link>
 					</el-col>
@@ -120,7 +120,7 @@
 		<div class="Footer">
       <el-row>
         <el-col :span="6">
-          <router-link to="/" class="Links">
+          <router-link to="/components/Home2" class="Links">
             <i class="el-icon-s-home"></i>
             <p>首页</p>
           </router-link>
@@ -155,7 +155,7 @@
 						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<router-link to="/">
+						<router-link to="/personalcenter/help/Help">
 							<img src="../../assets/personalcenter/help.png" alt="">
 							<div>帮助中心</div>
 						</router-link>
@@ -214,9 +214,12 @@ export default{
 	.headerbox{
 		margin:auto;
 		max-width:640px;
-		background-color:orange;
+		background-image: url(../../assets/backgroundv3.png);
+		background-size: contain;
+		background-position:center center;
+		background-repeat:no-repeat;
 		padding:20px 0;
-		height:150px;
+		height:186px;
 		.header{
 			width:200px;
 			height:100%;
@@ -311,6 +314,7 @@ export default{
     position: fixed;
     bottom:0;
     left:0;
+    z-index:100;
     .el-icon-s-home,.el-icon-search,.el-icon-shopping-cart-2,.el-icon-user{
       font-size: 25px;
     }

@@ -11,7 +11,7 @@
 						</div>
 					</el-col>
 					<el-col :span="16">
-						<span>关于我们</span>
+						<span>媒体报道</span>
 					</el-col>
 					<el-col :span="4">
 						<el-button @click="show = !show" class="elbtn">
@@ -38,6 +38,31 @@
 					</el-col>
 				</el-row>
 			</nav>
+			<section>
+				<div class="navlogo">
+					<img src="../../../assets/personalcenter/about/huali_banner_logo.png" alt="">
+				</div>
+				<div class="logo" v-for="n in 10">
+					<div>
+						<router-link to="/personalcenter/about/Approval">
+							<h3>张杰深圳演唱会温情落幕 歌迷鲜花求婚感动全场</h3>
+							<header>2012年12月21日，新生代偶像张杰在深圳唱响“这，就是爱”首个生日演唱会。这场以爱为名的演唱会，给大家带来了真正的感动，尤其是当晚歌迷上演的求婚一幕。演唱会主办方事先委托中国鲜花礼品网定制了一束99枝玫瑰花束，作为求婚鲜花。</header>
+							<p>
+								<el-row>
+									<el-col :span="12" class="left">
+										<span>2012.12.25</span>
+									</el-col>
+									<el-col :span="12" class="right">
+										<span>
+											查看详情<i class="el-icon-arrow-right"></i>
+										</span>
+									</el-col>
+								</el-row>
+							</p>
+						</router-link>
+					</div>
+				</div>
+			</section>
 	    <div class="Footer">
 	      <el-row>
 	        <el-col :span="6">
@@ -82,7 +107,7 @@ export default{
 </script>
 <style scoped lang="less">
 	.Box{
-		padding-bottom:40px;
+		padding-bottom:170px;
 		background-color:white;
 		.media{
 			height:100%;
@@ -129,37 +154,67 @@ export default{
 					}
 				}
 			}
-		
-		.foot{
-			img{
-				width:100%;
+			.navlogo{
+				text-align:center;
+				line-height:25rem;
+				background-image:url(../../../assets/personalcenter/about/banner_bg.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center center;
+				height: 23rem;
 			}
+			.logo{
+				margin:auto;
+				width:90%;
+				padding:30px 0;
+				border-bottom:1px solid #e9ecf0;
+				header{
+					margin-top:10px;
+					color:#71797f;
+					font-size: 12px;
+				}
+				h3{
+					color:black;
+				}
+				p{
+					margin-top:30px;
+					font-size: 12px;
+					color:#b4babf;
+					.right{
+						text-align:right;
+					}
+				}
+			}
+			.foot{
+				img{
+					width:100%;
+				}
+			}
+			.Footer{
+		    background-color:#f7f9fa;
+		    width:100%;
+		    max-height:80px;
+		    text-align: center;
+		    position: fixed;
+		    bottom:0;
+		    left:0;
+		    .el-col{
+		    	border:1px solid #e9ecf0;
+		    }
+		    .Media{
+		    	color:#ff734c;
+		    }
+				p{
+		    	font-size:12px;
+					padding:12px;
+					background-color:#f7f9fa;
+				}
+				.Links{
+					display: inline-block;
+					width:100%;
+					color:black;
+				}
+		  }
 		}
-		.Footer{
-	    background-color:#f7f9fa;
-	    width:100%;
-	    max-height:80px;
-	    text-align: center;
-	    position: fixed;
-	    bottom:0;
-	    left:0;
-	    .el-col{
-	    	border:1px solid #e9ecf0;
-	    }
-	    .Media{
-	    	color:#ff734c;
-	    }
-			p{
-	    	font-size:12px;
-				padding:12px;
-				background-color:#f7f9fa;
-			}
-			.Links{
-				display: inline-block;
-				width:100%;
-				color:black;
-			}
-	  }
 	}
-}
 </style>

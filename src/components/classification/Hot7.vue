@@ -3,61 +3,25 @@
 		<div class="photo">
 			<img src="/static/lunbotu/5.jpg" alt="">
 		</div>
-		<div>
+		<div v-for="n in 5">
 			<el-row class="lover">
 				<el-col :span="8">
-					<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
-					<div>送恋人鲜花</div>
+					<router-link to="/components/LoveFlowers">
+						<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
+						<div>送恋人鲜花</div>
+					</router-link>
 				</el-col>
 				<el-col :span="8">
-					<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
-					<div>送恋人鲜花</div>
+					<router-link to="/components/LoveFlowers">
+						<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
+						<div>送恋人鲜花</div>
+					</router-link>
 				</el-col>
 				<el-col :span="8">
-					<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
-					<div>送恋人鲜花</div>
-				</el-col>
-			</el-row>
-			<el-row class="lover">
-				<el-col :span="8">
-					<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
-					<div>送恋人鲜花</div>
-				</el-col>
-				<el-col :span="8">
-					<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
-					<div>送恋人鲜花</div>
-				</el-col>
-				<el-col :span="8">
-					<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
-					<div>送恋人鲜花</div>
-				</el-col>
-			</el-row>
-			<el-row class="lover">
-				<el-col :span="8">
-					<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
-					<div>送恋人鲜花</div>
-				</el-col>
-				<el-col :span="8">
-					<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
-					<div>送恋人鲜花</div>
-				</el-col>
-				<el-col :span="8">
-					<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
-					<div>送恋人鲜花</div>
-				</el-col>
-			</el-row>
-			<el-row class="lover">
-				<el-col :span="8">
-					<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
-					<div>送恋人鲜花</div>
-				</el-col>
-				<el-col :span="8">
-					<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
-					<div>送恋人鲜花</div>
-				</el-col>
-				<el-col :span="8">
-					<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
-					<div>送恋人鲜花</div>
+					<router-link to="/components/LoveFlowers">
+						<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
+						<div>送恋人鲜花</div>
+					</router-link>
 				</el-col>
 			</el-row>
 		</div>
@@ -79,6 +43,9 @@ export default{
 		margin:20px;
 		img{
 			width:90%;
+		}
+		div{
+			color:black;
 		}
 	}
 </style>

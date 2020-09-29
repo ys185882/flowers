@@ -12,29 +12,43 @@
 		</el-col>
 		<el-col :span="6">
 			<i class="el-icon-circle-check"></i>
-			最近条好评
+			最近
+			<router-link to="/components/Evaluate">
+				<u>386880</u>
+			</router-link>
+			条好评
 		</el-col>
 	</el-row>
 	<br>
 		<div class="flowers">
-			<img src="../assets/flower.png">
-			<div>鲜花</div>
+			<router-link to="/components/LoveFlowers">
+				<img src="../assets/flower.png">
+				<div>鲜花</div>
+			</router-link>
 		</div>
 		<div class="flowers">
-			<img src="../assets/flower2.png">
-			<div>永生花</div>
+			<router-link to="/components/LoveFlowers">
+				<img src="../assets/flower2.png">
+				<div>永生花</div>
+			</router-link>
 		</div>
 		<div class="flowers">
-			<img src="../assets/dangao.png">
-			<div>蛋糕</div>
+			<router-link to="/components/LoveFlowers">
+				<img src="../assets/dangao.png">
+				<div>蛋糕</div>
+			</router-link>
 		</div>
 		<div class="flowers">
-			<img src="../assets/liwu.png">
-			<div>礼物</div>
+			<router-link to="/components/LoveFlowers">
+				<img src="../assets/liwu.png">
+				<div>礼物</div>
+			</router-link>
 		</div>
 		<div class="flowers">
-			<img src="../assets/pay.png">
-			<div>企业团购</div>
+			<router-link to="/components/LoveFlowers">
+				<img src="../assets/pay.png">
+				<div>企业团购</div>
+			</router-link>
 		</div>
 	<br>
 	<br>
@@ -130,7 +144,10 @@ export default{
 	.flowersBox{
 		background-color: white;
 		.fz{
-			font-size: 20px;
+			font-size: 14px;
+			u{
+				color:#435448;
+			}
 		}
 	}
 	.flowers{
@@ -140,6 +157,9 @@ export default{
 		width: 18%;
 		img{
 			width:80%;
+		}
+		div{
+			color:black;
 		}
 	}
 	.navPhoto{

@@ -1,118 +1,122 @@
 <template>
 	<div class="sendflowers">
-		<div class="title">送恋人/爱情鲜花</div>
-		<el-row>
-			<el-col :span="12">
-				<img src="../assets/meiguihua.jpg" alt="" class="photo">
-			</el-col>
-			<el-col :span="12">
-				<p class="one">一往情深</p>
-				<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
-				<button>年销售冠军</button>
-				<div class="champion">经典爆款，年销售冠军！</div>
-				<div class="shopping">
-					<el-row>
-						<el-col :span="20" class="pd">
-							<div>￥239 <s>￥315</s></div>
-							<div class="xs">已销售12.8万件</div>
-						</el-col>
-						<el-col :span="4">
-							<i class="el-icon-shopping-cart-2"></i>
-						</el-col>
-					</el-row>
-				</div>
-			</el-col>
-		</el-row>
-		<el-row>
-			<el-col :span="12">
-				<img src="../assets/meiguihua.jpg" alt="" class="photo">
-			</el-col>
-			<el-col :span="12">
-				<p class="one">一往情深</p>
-				<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
-				<button>年销售冠军</button>
-				<div class="champion">经典爆款，年销售冠军！</div>
-				<div class="shopping">
-					<el-row>
-						<el-col :span="20" class="pd">
-							<div>￥239 <s>￥315</s></div>
-							<div class="xs">已销售12.8万件</div>
-						</el-col>
-						<el-col :span="4">
-							<i class="el-icon-shopping-cart-2"></i>
-						</el-col>
-					</el-row>
-				</div>
-			</el-col>
-		</el-row>
-		<el-row>
-			<el-col :span="12">
-				<img src="../assets/meiguihua.jpg" alt="" class="photo">
-			</el-col>
-			<el-col :span="12">
-				<p class="one">一往情深</p>
-				<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
-				<button>年销售冠军</button>
-				<div class="champion">经典爆款，年销售冠军！</div>
-				<div class="shopping">
-					<el-row>
-						<el-col :span="20" class="pd">
-							<div>￥239 <s>￥315</s></div>
-							<div class="xs">已销售12.8万件</div>
-						</el-col>
-						<el-col :span="4">
-							<i class="el-icon-shopping-cart-2"></i>
-						</el-col>
-					</el-row>
-				</div>
-			</el-col>
-		</el-row>
-		<el-row>
-			<el-col :span="12">
-				<img src="../assets/meiguihua.jpg" alt="" class="photo">
-			</el-col>
-			<el-col :span="12">
-				<p class="one">一往情深</p>
-				<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
-				<button>年销售冠军</button>
-				<div class="champion">经典爆款，年销售冠军！</div>
-				<div class="shopping">
-					<el-row>
-						<el-col :span="20" class="pd">
-							<div>￥239 <s>￥315</s></div>
-							<div class="xs">已销售12.8万件</div>
-						</el-col>
-						<el-col :span="4">
-							<i class="el-icon-shopping-cart-2"></i>
-						</el-col>
-					</el-row>
-				</div>
-			</el-col>
-		</el-row>
-		<el-row>
-			<el-col :span="12">
-				<img src="../assets/meiguihua.jpg" alt="" class="photo">
-			</el-col>
-			<el-col :span="12">
-				<p class="one">一往情深</p>
-				<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
-				<button>年销售冠军</button>
-				<div class="champion">经典爆款，年销售冠军！</div>
-				<div class="shopping">
-					<el-row>
-						<el-col :span="20" class="pd">
-							<div>￥239 <s>￥315</s></div>
-							<div class="xs">已销售12.8万件</div>
-						</el-col>
-						<el-col :span="4">
-							<i class="el-icon-shopping-cart-2"></i>
-						</el-col>
-					</el-row>
-				</div>
-			</el-col>
-		</el-row>
-		<div class="more">
-			<button>查看更多</button>
+		<div v-for="n in 8">
+			<div class="title">送恋人/爱情鲜花</div>
+			<el-row>
+				<el-col :span="12">
+					<img src="../assets/meiguihua.jpg" alt="" class="photo">
+				</el-col>
+				<el-col :span="12">
+					<p class="one">一往情深</p>
+					<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
+					<button>年销售冠军</button>
+					<div class="champion">经典爆款，年销售冠军！</div>
+					<div class="shopping">
+						<el-row>
+							<el-col :span="20" class="pd">
+								<div>￥239 <s>￥315</s></div>
+								<div class="xs">已销售12.8万件</div>
+							</el-col>
+							<el-col :span="4">
+								<i class="el-icon-shopping-cart-2"></i>
+							</el-col>
+						</el-row>
+					</div>
+				</el-col>
+			</el-row>
+			<el-row>
+				<el-col :span="12">
+					<img src="../assets/meiguihua.jpg" alt="" class="photo">
+				</el-col>
+				<el-col :span="12">
+					<p class="one">一往情深</p>
+					<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
+					<button>年销售冠军</button>
+					<div class="champion">经典爆款，年销售冠军！</div>
+					<div class="shopping">
+						<el-row>
+							<el-col :span="20" class="pd">
+								<div>￥239 <s>￥315</s></div>
+								<div class="xs">已销售12.8万件</div>
+							</el-col>
+							<el-col :span="4">
+								<i class="el-icon-shopping-cart-2"></i>
+							</el-col>
+						</el-row>
+					</div>
+				</el-col>
+			</el-row>
+			<el-row>
+				<el-col :span="12">
+					<img src="../assets/meiguihua.jpg" alt="" class="photo">
+				</el-col>
+				<el-col :span="12">
+					<p class="one">一往情深</p>
+					<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
+					<button>年销售冠军</button>
+					<div class="champion">经典爆款，年销售冠军！</div>
+					<div class="shopping">
+						<el-row>
+							<el-col :span="20" class="pd">
+								<div>￥239 <s>￥315</s></div>
+								<div class="xs">已销售12.8万件</div>
+							</el-col>
+							<el-col :span="4">
+								<i class="el-icon-shopping-cart-2"></i>
+							</el-col>
+						</el-row>
+					</div>
+				</el-col>
+			</el-row>
+			<el-row>
+				<el-col :span="12">
+					<img src="../assets/meiguihua.jpg" alt="" class="photo">
+				</el-col>
+				<el-col :span="12">
+					<p class="one">一往情深</p>
+					<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
+					<button>年销售冠军</button>
+					<div class="champion">经典爆款，年销售冠军！</div>
+					<div class="shopping">
+						<el-row>
+							<el-col :span="20" class="pd">
+								<div>￥239 <s>￥315</s></div>
+								<div class="xs">已销售12.8万件</div>
+							</el-col>
+							<el-col :span="4">
+								<i class="el-icon-shopping-cart-2"></i>
+							</el-col>
+						</el-row>
+					</div>
+				</el-col>
+			</el-row>
+			<el-row>
+				<el-col :span="12">
+					<img src="../assets/meiguihua.jpg" alt="" class="photo">
+				</el-col>
+				<el-col :span="12">
+					<p class="one">一往情深</p>
+					<p class="of">精品玫瑰礼盒：19枝红玫瑰，勿忘我0.1扎</p>
+					<button>年销售冠军</button>
+					<div class="champion">经典爆款，年销售冠军！</div>
+					<div class="shopping">
+						<el-row>
+							<el-col :span="20" class="pd">
+								<div>￥239 <s>￥315</s></div>
+								<div class="xs">已销售12.8万件</div>
+							</el-col>
+							<el-col :span="4">
+								<i class="el-icon-shopping-cart-2"></i>
+							</el-col>
+						</el-row>
+					</div>
+				</el-col>
+			</el-row>
+			<div class="more">
+				<router-link to="/components/LoveFlowers">
+					<button>查看更多</button>
+				</router-link>
+			</div>
 		</div>
 		<div class="enterprise">
 			<img src="../assets/m_home_qiyetuangou.png" alt="">

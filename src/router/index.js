@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Home2 from '@/components/Home2'
+import LoveFlowers from '@/components/LoveFlowers'
+import Evaluate from '@/components/Evaluate'
 import Classs from '@/components/classification/Classs'
 import Classs2 from '@/components/classification/Classs2'
 import Hot from '@/components/classification/Hot'
@@ -25,6 +27,8 @@ import About from '@/components/personalcenter/about/About'
 import Culture from '@/components/personalcenter/about/Culture'
 import Dynamic from '@/components/personalcenter/about/Dynamic'
 import Media from '@/components/personalcenter/about/Media'
+import Approval from '@/components/personalcenter/about/Approval'
+import Help from '@/components/personalcenter/help/Help'
 
 Vue.use(Router);
 
@@ -39,6 +43,16 @@ export default new Router({
       path: '/components/Home2',
       name: 'Home2',
       component: Home2
+    },
+    {
+      path: '/components/LoveFlowers',
+      name: 'LoveFlowers',
+      component: LoveFlowers
+    },
+    {
+      path: '/components/Evaluate',
+      name: 'Evaluate',
+      component: Evaluate
     },
     {
       path:'/classification/Classs2',
@@ -193,6 +207,16 @@ export default new Router({
       path:'/personalcenter/about/Media',
       name:'Media',
       component:Media
+    },
+    {
+      path:'/personalcenter/about/Approval',
+      name:'Approval',
+      component:Approval
+    },
+    {
+      path:'/personalcenter/help/Help',
+      name:'Help',
+      component:Help
     },
     {
       path:'/',

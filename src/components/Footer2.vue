@@ -12,7 +12,7 @@
 					<button>同城鲜花</button>
 				</el-col>
 				<el-col :span="6">
-					<button>华语大全</button>
+					<button>花语大全</button>
 				</el-col>
 			</el-row>
 			<br>
@@ -27,7 +27,9 @@
 					<button>常见问题</button>
 				</el-col>
 				<el-col :span="6">
-					<button>关于我们</button>
+					<router-link to="/personalcenter/about/About">
+						<button>关于我们</button>
+					</router-link>
 				</el-col>
 			</el-row>
 			<br>

@@ -4,37 +4,51 @@
 			<div class="one">一秒选花</div>
 			<el-row>
 				<el-col :span="8">
-					<img src="../assets/m_home_use_lover.png" alt="">
+					<router-link to="/components/LoveFlowers">
+						<img src="../assets/m_home_use_lover.png" alt="">
+					</router-link>
 				</el-col>
 				<el-col :span="8">
-					<img src="../assets/m_home_use_elder.png" alt="">
+					<router-link to="/components/LoveFlowers">
+						<img src="../assets/m_home_use_elder.png" alt="">
+					</router-link>
 				</el-col>
 				<el-col :span="8">
-					<img src="../assets/m_home_use_friends.png" alt="">
+					<router-link to="/components/LoveFlowers">
+						<img src="../assets/m_home_use_friends.png" alt="">
+					</router-link>
 				</el-col>
 			</el-row>
 		</div>
 		<div class="flowerS">
 			<el-row>
 				<el-col :span="6">
-					<div>
-						<p class="p1">生日祝福</p>
-					</div>
+					<router-link to="/components/LoveFlowers">
+						<div>
+							<p class="p1">生日祝福</p>
+						</div>
+					</router-link>
 				</el-col>
 				<el-col :span="6">
-					<div>
-						<p class="p2">表白求婚</p>
-					</div>
+					<router-link to="/components/LoveFlowers">
+						<div>
+							<p class="p2">表白求婚</p>
+						</div>
+					</router-link>
 				</el-col>
 				<el-col :span="6">
-					<div>
-						<p class="p3">开业服务</p>
-					</div>
+					<router-link to="/components/LoveFlowers">
+						<div>
+							<p class="p3">开业服务</p>
+						</div>
+					</router-link>
 				</el-col>
 				<el-col :span="6">
-					<div>
-						<p class="p4">周年纪念</p>
-					</div>
+					<router-link to="/components/LoveFlowers">
+						<div>
+							<p class="p4">周年纪念</p>
+						</div>
+					</router-link>
 				</el-col>
 			</el-row>
 		</div>
@@ -121,6 +135,7 @@ export default{
 				width:90%;
 			}
 			.p1{
+				color:black;
 				font-size: 1.5rem;
 				padding:10px 0;
 				width:95%;
@@ -133,6 +148,7 @@ export default{
 				background-color:#f7f9fa;
 			}
 			.p2{
+				color:black;
 				font-size: 1.5rem;
 				padding:10px 0;
 				width:95%;
@@ -145,6 +161,7 @@ export default{
 				background-color:#f7f9fa;
 			}
 			.p3{
+				color:black;
 				font-size: 1.5rem;
 				padding:10px 0;
 				width:95%;
@@ -157,6 +174,7 @@ export default{
 				background-color:#f7f9fa;
 			}
 			.p4{
+				color:black;
 				font-size: 1.5rem;
 				padding:10px 0;
 				width:95%;
