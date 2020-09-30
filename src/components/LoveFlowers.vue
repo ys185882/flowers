@@ -78,21 +78,25 @@
 				<div v-for="i in count" class="infinite-list-item">
 					<el-row>
 						<el-col :span="12">
-							<div class="imgbox">
-								<img src="../assets/LoveFlowers/1.jpg" alt="">
-								<div class="one">
-									<span>用心爱你·99枝：33枝戴安娜＋66枝红玫瑰</span>
-									<p>￥568</p>
+							<div class="imgphoto">
+								<div class="imgbox">
+									<img src="../assets/LoveFlowers/1.jpg" alt="">
+									<div class="one">
+										<span>用心爱你·99枝：33枝戴安娜＋66枝红玫瑰</span>
+										<p>￥568</p>
+									</div>
 								</div>
 							</div>
 						</el-col>
 						<el-col :span="12">
-							<div class="imgbox">
-								<img src="../assets/LoveFlowers/2.jpg" alt="">
-								<div class="two">
-									<div>全新韩式系列</div>
-									<span>韩式系列/初心不负</span>
-									<p>￥228</p>
+							<div class="imgphoto">
+								<div class="imgbox">
+									<img src="../assets/LoveFlowers/2.jpg" alt="">
+									<div class="two">
+										<div>全新韩式系列</div>
+										<span>韩式系列/初心不负</span>
+										<p>￥228</p>
+									</div>
 								</div>
 							</div>
 						</el-col>
@@ -239,12 +243,15 @@ export default{
 		section{
 			margin-top:30px;
 			background-color:#e9ecf0;
+			.imgphoto{
+				padding:0 20px;
+			}
 			.imgbox{
 				height:437.6px;
 				border-radius:5px;
 				margin:auto;
 				background-color:white;
-				width:90%;
+				width:100%;
 				margin:20px 0;
 				img{
 					width:100%;

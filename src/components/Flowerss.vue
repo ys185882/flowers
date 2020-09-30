@@ -80,20 +80,26 @@
 		<el-row class="new">
 			<el-col :span="8">
 				<div class="news1">
-					<div class="p7"></div>
-					<div class="foot">新品来袭</div>
+					<router-link to="/new/New">
+						<div class="p7"></div>
+						<div class="foot">新品来袭</div>
+					</router-link>
 				</div>
 			</el-col>
 			<el-col :span="8">
 				<div class="news2">
-					<div class="p8"></div>
-					<div class="foot">品味之选</div>
+					<router-link to="/pinweizhixuan/Pinwei">
+						<div class="p8"></div>
+						<div class="foot">品味之选</div>
+					</router-link>
 				</div>
 			</el-col>
 			<el-col :span="8">
 				<div class="news3">
-					<div class="p9"></div>
-					<div class="foot">设计师臻选</div>
+					<router-link to="/DesignerSelector/DesignerSelector">
+						<div class="p9"></div>
+						<div class="foot">设计师臻选</div>
+					</router-link>
 				</div>
 			</el-col>
 		</el-row>

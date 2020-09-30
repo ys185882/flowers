@@ -29,6 +29,12 @@ import Dynamic from '@/components/personalcenter/about/Dynamic'
 import Media from '@/components/personalcenter/about/Media'
 import Approval from '@/components/personalcenter/about/Approval'
 import Help from '@/components/personalcenter/help/Help'
+import New from '@/components/new/New'
+import Newflowers from '@/components/new/Newflowers'
+import Gift from '@/components/new/Gift'
+import Yongshenghua from '@/components/new/Yongshenghua'
+import Pinwei from '@/components/pinweizhixuan/Pinwei'
+import DesignerSelector from '@/components/DesignerSelector/DesignerSelector'
 
 Vue.use(Router);
 
@@ -217,6 +223,39 @@ export default new Router({
       path:'/personalcenter/help/Help',
       name:'Help',
       component:Help
+    },
+    {
+      path:'/new/New',
+      name:'New',
+      component:New,
+      children:[
+        {
+          path:'/new/Newflowers',
+          name:'Newflowers',
+          component:Newflowers
+        },
+        {
+          path:'/new/Yongshenghua',
+          name:'Yongshenghua',
+          component:Yongshenghua
+        },
+        {
+          path:'/new/Gift',
+          name:'Gift',
+          component:Gift
+        }
+      ],
+        redirect:'/new/Newflowers'
+    },
+    {
+      path:'/pinweizhixuan/Pinwei',
+      name:'Pinwei',
+      component:Pinwei
+    },
+    {
+      path:'/DesignerSelector/DesignerSelector',
+      name:'DesignerSelector',
+      component:DesignerSelector
     },
     {
       path:'/',
