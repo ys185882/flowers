@@ -6,7 +6,9 @@
 					<button>企业团购</button>
 				</el-col>
 				<el-col :span="6">
-					<button>设计师款</button>
+					<router-link to="/DesignerSelector/DesignerSelector">
+						<button>设计师款</button>
+					</router-link>
 				</el-col>
 				<el-col :span="6">
 					<button>同城鲜花</button>
@@ -36,16 +38,20 @@
 			<br>
 			<el-row class="phone">
 				<el-col :span="12">
-					<button>
-						<i class="el-icon-mobile-phone"></i>
-					</button>
-					<div>客户端</div>
+					<router-link to="/client/Client">
+						<button>
+							<i class="el-icon-mobile-phone"></i>
+						</button>
+						<div class="client">客户端</div>
+					</router-link>
 				</el-col>
 				<el-col :span="12">
-					<button>
-						<i class="el-icon-headset"></i>
-					</button>
-					<div>客服</div>
+					<router-link to="/personalcenter/Customerservice">
+						<button>
+							<i class="el-icon-headset"></i>
+						</button>
+						<div class="client">客服</div>
+					</router-link>
 				</el-col>
 			</el-row>
 		</div>
@@ -114,6 +120,9 @@ export default{
 			width: 40px;
 			border-radius:20px;
 			margin-bottom: 10px;
+		}
+		.client{
+			color:black;
 		}
 	}
 	.Text{

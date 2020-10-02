@@ -157,7 +157,7 @@ export default{
        this.$router.go(-1);
     },
     load () {
-      this.count += 2
+    		this.count += 2
     }
 	}
 }

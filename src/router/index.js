@@ -28,6 +28,7 @@ import Culture from '@/components/personalcenter/about/Culture'
 import Dynamic from '@/components/personalcenter/about/Dynamic'
 import Media from '@/components/personalcenter/about/Media'
 import Approval from '@/components/personalcenter/about/Approval'
+import Coupon from '@/components/personalcenter/coupon/coupon'
 import Help from '@/components/personalcenter/help/Help'
 import New from '@/components/new/New'
 import Newflowers from '@/components/new/Newflowers'
@@ -35,6 +36,7 @@ import Gift from '@/components/new/Gift'
 import Yongshenghua from '@/components/new/Yongshenghua'
 import Pinwei from '@/components/pinweizhixuan/Pinwei'
 import DesignerSelector from '@/components/DesignerSelector/DesignerSelector'
+import Client from '@/components/client/Client'
 
 Vue.use(Router);
 
@@ -220,6 +222,11 @@ export default new Router({
       component:Approval
     },
     {
+      path:'/personalcenter/coupon/coupon',
+      name:'Coupon',
+      component:Coupon
+    },
+    {
       path:'/personalcenter/help/Help',
       name:'Help',
       component:Help
@@ -256,6 +263,11 @@ export default new Router({
       path:'/DesignerSelector/DesignerSelector',
       name:'DesignerSelector',
       component:DesignerSelector
+    },
+    {
+      path:'/client/Client',
+      name:'Client',
+      component:Client
     },
     {
       path:'/',
