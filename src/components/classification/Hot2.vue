@@ -6,19 +6,19 @@
 		<div v-for="n in 5">
 			<el-row class="lover">
 				<el-col :span="8">
-					<router-link to="/components/LoveFlowers">
+					<router-link to="/components/LoveFlowers2">
 						<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
 						<div>送恋人鲜花</div>
 					</router-link>
 				</el-col>
 				<el-col :span="8">
-					<router-link to="/components/LoveFlowers">
+					<router-link to="/components/LoveFlowers2">
 						<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
 						<div>送恋人鲜花</div>
 					</router-link>
 				</el-col>
 				<el-col :span="8">
-					<router-link to="/components/LoveFlowers">
+					<router-link to="/components/LoveFlowers2">
 						<img src="../../assets/Class/m_category_hot_Lover.png" alt="">
 						<div>送恋人鲜花</div>
 					</router-link>

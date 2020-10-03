@@ -1,6 +1,6 @@
 <template>
 	<div class="Box">
-		<div class="LoveFlowers">
+		<div class="LoveFlowers2">
 			<nav>
 				<el-row>
 					<el-col :span="6">
@@ -23,16 +23,16 @@
 			      <transition name="el-fade-in-linear">
 			        <div v-show="show" class="transition-box">
 			        	<div class="list">
-									<router-link to="/components/Home">
+									<router-link to="/components/Home2">
 										<div class="home"><i class="el-icon-house"></i>首页</div>
 									</router-link>
-									<router-link to="/classification/Classs">
+									<router-link to="/classification/Classs2">
 										<div class="classs"><i class="el-icon-search"></i>分类搜索</div>
 									</router-link>
-									<router-link to="/shoppingcar/ShoppingCar">
+									<router-link to="/shoppingcar/ShoppingCar2">
 									<div class="shoppingcar"><i class="el-icon-shopping-cart-2"></i>购物车</div>
 									</router-link>
-									<router-link to="/personalcenter/PersonalCenter">
+									<router-link to="/personalcenter/PersonalCenter2">
 										<div class="personal"><i class="el-icon-user"></i>我的</div>
 									</router-link>
 								</div>
@@ -144,7 +144,7 @@
 
 <script>
 export default{
-	name:'LoveFlowers',
+	name:'LoveFlowers2',
 	data(){
 		return {
 			show:false,
@@ -167,7 +167,7 @@ export default{
 .Box{
  	padding-bottom:50px;
  	background-color:#e9ecf0;
- 	.LoveFlowers{
+ 	.LoveFlowers2{
  		margin:auto;
  		max-width:640px;
  		background-color:#e9ecf0;

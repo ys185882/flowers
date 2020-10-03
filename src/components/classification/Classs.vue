@@ -12,25 +12,25 @@
       <el-row>
         <el-col :span="6">
           <div>
-            <router-link to="/classification/Hot" class="hot">热门推荐</router-link>
+            <router-link to="/classification/Hot8" class="hot">热门推荐</router-link>
           </div>
           <div>
-            <router-link to="/classification/Hot2" class="hot">鲜花</router-link>
+            <router-link to="/classification/Hot9" class="hot">鲜花</router-link>
           </div>
           <div>
-            <router-link to="/classification/Hot3" class="hot">永生花</router-link>
+            <router-link to="/classification/Hot10" class="hot">永生花</router-link>
           </div>
           <div>
-            <router-link to="/classification/Hot4" class="hot">蛋糕</router-link>
+            <router-link to="/classification/Hot11" class="hot">蛋糕</router-link>
           </div>
           <div>
-            <router-link to="/classification/Hot5" class="hot">特色礼品</router-link>
+            <router-link to="/classification/Hot12" class="hot">特色礼品</router-link>
           </div>
           <div>
-            <router-link to="/classification/Hot6" class="hot">礼篮</router-link>
+            <router-link to="/classification/Hot13" class="hot">礼篮</router-link>
           </div>
           <div>
-            <router-link to="/classification/Hot7" class="hot">绿植花卉</router-link>
+            <router-link to="/classification/Hot14" class="hot">绿植花卉</router-link>
           </div>
         </el-col>
         <el-col :span="18" class="view">

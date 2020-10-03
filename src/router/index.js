@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Home2 from '@/components/Home2'
 import LoveFlowers from '@/components/LoveFlowers'
+import LoveFlowers2 from '@/components/LoveFlowers2'
 import Evaluate from '@/components/Evaluate'
 import Classs from '@/components/classification/Classs'
 import Classs2 from '@/components/classification/Classs2'
@@ -13,6 +14,13 @@ import Hot4 from '@/components/classification/Hot4'
 import Hot5 from '@/components/classification/Hot5'
 import Hot6 from '@/components/classification/Hot6'
 import Hot7 from '@/components/classification/Hot7'
+import Hot8 from '@/components/classification/Hot8'
+import Hot9 from '@/components/classification/Hot9'
+import Hot10 from '@/components/classification/Hot10'
+import Hot11 from '@/components/classification/Hot11'
+import Hot12 from '@/components/classification/Hot12'
+import Hot13 from '@/components/classification/Hot13'
+import Hot14 from '@/components/classification/Hot14'
 import Search from '@/components/classification/Search'
 import ShoppingCar from '@/components/shoppingcar/ShoppingCar'
 import ShoppingCar2 from '@/components/shoppingcar/ShoppingCar2'
@@ -29,7 +37,16 @@ import Dynamic from '@/components/personalcenter/about/Dynamic'
 import Media from '@/components/personalcenter/about/Media'
 import Approval from '@/components/personalcenter/about/Approval'
 import Coupon from '@/components/personalcenter/coupon/coupon'
+import Invalid from '@/components/personalcenter/coupon/Invalid'
+import Nouse from '@/components/personalcenter/coupon/Nouse'
+import Used from '@/components/personalcenter/coupon/Used'
 import Help from '@/components/personalcenter/help/Help'
+import Order from '@/components/personalcenter/order/Order'
+import Allorder from '@/components/personalcenter/order/Allorder'
+import Payment from '@/components/personalcenter/order/Payment'
+import Delivery from '@/components/personalcenter/order/Delivery'
+import Evaluates from '@/components/personalcenter/order/Evaluates'
+import EquityCard from '@/components/personalcenter/equitycard/EquityCard'
 import New from '@/components/new/New'
 import Newflowers from '@/components/new/Newflowers'
 import Gift from '@/components/new/Gift'
@@ -56,6 +73,11 @@ export default new Router({
       path: '/components/LoveFlowers',
       name: 'LoveFlowers',
       component: LoveFlowers
+    },
+    {
+      path: '/components/LoveFlowers2',
+      name: 'LoveFlowers2',
+      component: LoveFlowers2
     },
     {
       path: '/components/Evaluate',
@@ -111,42 +133,42 @@ export default new Router({
     	component: Classs,
       children:[
       {
-        path:'/classification/Hot',
-        name:'Hot',
-        component:Hot
+        path:'/classification/Hot8',
+        name:'Hot8',
+        component:Hot8
       },
       {
-        path:'/classification/Hot2',
-        name:'Hot2',
-        component:Hot2
+        path:'/classification/Hot9',
+        name:'Hot9',
+        component:Hot9
       },
       {
-        path:'/classification/Hot3',
-        name:'Hot3',
-        component:Hot3
+        path:'/classification/Hot10',
+        name:'Hot10',
+        component:Hot10
       },
       {
-        path:'/classification/Hot4',
-        name:'Hot4',
-        component:Hot4
+        path:'/classification/Hot11',
+        name:'Hot11',
+        component:Hot11
       },
       {
-        path:'/classification/Hot5',
-        name:'Hot5',
-        component:Hot5
+        path:'/classification/Hot12',
+        name:'Hot12',
+        component:Hot12
       },
       {
-        path:'/classification/Hot6',
-        name:'Hot6',
-        component:Hot6
+        path:'/classification/Hot13',
+        name:'Hot13',
+        component:Hot13
       },
       {
-        path:'/classification/Hot7',
-        name:'Hot7',
-        component:Hot7
+        path:'/classification/Hot14',
+        name:'Hot14',
+        component:Hot14
       }
       ],
-      redirect:'/classification/Hot'
+      redirect:'/classification/Hot8'
     },
     {
       path:'/classification/Search',
@@ -224,12 +246,63 @@ export default new Router({
     {
       path:'/personalcenter/coupon/coupon',
       name:'Coupon',
-      component:Coupon
+      component:Coupon,
+      children:[
+        {
+          path:'/personalcenter/coupon/Invalid',
+          name:'Invalid',
+          component:Invalid
+        },
+        {
+          path:'/personalcenter/coupon/Used',
+          name:'Used',
+          component:Used
+        },
+        {
+          path:'/personalcenter/coupon/Nouse',
+          name:'Nouse',
+          component:Nouse
+        }
+      ],
+      redirect:'/personalcenter/coupon/Nouse'
     },
     {
       path:'/personalcenter/help/Help',
       name:'Help',
       component:Help
+    },
+    {
+      path:'/personalcenter/order/Order',
+      name:'Order',
+      component:Order,
+      children:[
+        {
+          path:'/personalcenter/order/Allorder',
+          name:'Allorder',
+          component:Allorder
+        },
+        {
+          path:'/personalcenter/order/Payment',
+          name:'Payment',
+          component:Payment
+        },
+        {
+          path:'/personalcenter/order/Delivery',
+          name:'Delivery',
+          component:Delivery
+        },
+        {
+          path:'/personalcenter/order/Evaluates',
+          name:'Evaluates',
+          component:Evaluates
+        },
+      ],
+      redirect:'/personalcenter/order/Allorder'
+    },
+    {
+      path:'/personalcenter/equitycard/EquityCard',
+      name:'EquityCard',
+      component:EquityCard
     },
     {
       path:'/new/New',

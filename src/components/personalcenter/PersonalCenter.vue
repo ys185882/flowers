@@ -27,24 +27,32 @@
 					<el-row class="first">
 						<el-col :span="12">我的订单</el-col>
 						<el-col :span="12">
-							<div class="all">
-								全部订单
-								<i class="el-icon-arrow-right"></i>
-							</div>
+							<router-link to="/personalcenter/order/Allorder">
+								<div class="all">
+									全部订单
+									<i class="el-icon-arrow-right"></i>
+								</div>
+							</router-link>
 						</el-col>
 					</el-row>
 					<el-row class="two">
 						<el-col :span="8">
-							<img src="../../assets/personalcenter/myinfo_pendingpay.png" alt="">
-							<div>待付款</div>
+							<router-link to="/personalcenter/order/Payment">
+								<img src="../../assets/personalcenter/myinfo_pendingpay.png" alt="">
+								<div>待付款</div>
+							</router-link>
 						</el-col>
 						<el-col :span="8">
-							<img src="../../assets/personalcenter/myinfo_distribution.png" alt="">
-							<div>今日配送</div>
+							<router-link to="/personalcenter/order/Delivery">
+								<img src="../../assets/personalcenter/myinfo_distribution.png" alt="">
+								<div>今日配送</div>
+							</router-link>
 						</el-col>
 						<el-col :span="8">
-							<img src="../../assets/personalcenter/myinfo_evaluation.png" alt="">
-							<div>待评价</div>
+							<router-link to="/personalcenter/order/Evaluates">
+								<img src="../../assets/personalcenter/myinfo_evaluation.png" alt="">
+								<div>待评价</div>
+							</router-link>
 						</el-col>
 					</el-row>
 				</div>
@@ -54,12 +62,16 @@
 			<div class="First">
 				<el-row>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/youhui.png" alt="">
-						<div>优惠券</div>
+						<router-link to="/personalcenter/coupon/coupon">
+							<img src="../../assets/personalcenter/youhui.png" alt="">
+							<div>优惠券</div>
+						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/quanyi.png" alt="">
-						<div>权益卡</div>
+						<router-link to ="/personalcenter/equitycard/EquityCard">
+							<img src="../../assets/personalcenter/quanyi.png" alt="">
+							<div>权益卡</div>
+						</router-link>
 					</el-col>
 					<el-col :span="6">
 						<img src="../../assets/personalcenter/yue.png" alt="">
@@ -175,13 +187,16 @@ export default{
 	.headerbox{
 		margin:auto;
 		max-width:640px;
-		background-color:orange;
+		background-image: url(../../assets/backgroundv3.png);
+		background-size: contain;
+		background-position:center center;
+		background-repeat:no-repeat;
 		padding:20px 0;
-		height:100px;
+		height:186px;
 		.header{
 			width:200px;
 			height:100%;
-			margin:auto;
+			margin:40px auto -50px;
 			img{
 				width:40%;
 				border-radius:50%;
@@ -211,6 +226,7 @@ export default{
 			font-size:25px;
 			.section{
 				.all{
+					color:black;
 					text-align: right;
 				}
 				.first{
@@ -221,6 +237,9 @@ export default{
 					font-size: 20px;
 					padding:20px;
 					text-align:center;
+					a{
+						color:black;
+					}
 				}
 			}
 		}
@@ -240,6 +259,9 @@ export default{
 			border-bottom:1px solid #e9ecf0;
 			img{
 				width:25%;
+			}
+			a{
+				color:black;
 			}
 		}
 		.Two{
@@ -278,6 +300,7 @@ export default{
     position: fixed;
     bottom:0;
     left:0;
+    z-index:20;
     .el-icon-s-home,.el-icon-search,.el-icon-shopping-cart-2,.el-icon-user{
       font-size: 25px;
     }

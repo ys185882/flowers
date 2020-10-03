@@ -55,9 +55,11 @@
 						</div>
 					</div>
 					<div class="register">
-						<button>
-							<div>手机号登录/注册</div>
-						</button>
+						<router-link to="/components/Home">
+							<button>
+								<div>手机号登录/注册</div>
+							</button>
+						</router-link>
 					</div>
 					<div class="registertext">账号密码登录</div>
 				</form>

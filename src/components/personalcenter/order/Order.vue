@@ -1,6 +1,6 @@
 <template>
 	<div class="Box">
-		<div class="coupon">
+		<div class="order">
 			<nav>
 				<el-row>
 					<el-col :span="1">
@@ -11,21 +11,24 @@
 						</div>
 					</el-col>
 					<el-col :span="22">
-						<span>我的优惠券</span>
+						<span>我的订单</span>
 					</el-col>
 					<el-col :span="1"></el-col>
 				</el-row>
 			</nav>
 			<section>
 				<el-row>
-					<el-col :span="8">
-						<router-link to="/personalcenter/coupon/Nouse">未使用(0)</router-link>
+					<el-col :span="6">
+						<router-link to="/personalcenter/order/Allorder">全部</router-link>
 					</el-col>
-					<el-col :span="8">
-						<router-link to="/personalcenter/coupon/Used">已使用(0)</router-link>
+					<el-col :span="6">
+						<router-link to="/personalcenter/order/Payment">待付款</router-link>
 					</el-col>
-					<el-col :span="8">
-						<router-link to="/personalcenter/coupon/Invalid">已失效(0)</router-link>
+					<el-col :span="6">
+						<router-link to="/personalcenter/order/Delivery">今日配送</router-link>
+					</el-col>
+					<el-col :span="6">
+						<router-link to="/personalcenter/order/Evaluates">待评价</router-link>
 					</el-col>
 				</el-row>
 			</section>
@@ -35,7 +38,7 @@
 </template>
 <script>
 	export default{
-		name:'Coupon',
+		name:'Order',
 		methods:{
 		    back(){
 		        this.$router.go(-1);
@@ -47,7 +50,7 @@
 	 .Box{
 	 	padding-bottom:50px;
 	 	background-color:#e9ecf0;
-	 	.coupon{
+	 	.order{
 	 		max-width:640px;
 	 		margin:auto;
 			nav{
@@ -58,7 +61,6 @@
 				font-size:1.5rem;
 				padding:20px 0;
 				line-height: 50%;
-				border-bottom:2px solid #f3f5f7;
 				i{
 					font-size:2.5rem;
 					line-height: 50%;
