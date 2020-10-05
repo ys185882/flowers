@@ -47,6 +47,8 @@ import Payment from '@/components/personalcenter/order/Payment'
 import Delivery from '@/components/personalcenter/order/Delivery'
 import Evaluates from '@/components/personalcenter/order/Evaluates'
 import EquityCard from '@/components/personalcenter/equitycard/EquityCard'
+import Balance from '@/components/personalcenter/balance/Balance'
+import Integral from '@/components/personalcenter/integral/Integral'
 import New from '@/components/new/New'
 import Newflowers from '@/components/new/Newflowers'
 import Gift from '@/components/new/Gift'
@@ -303,6 +305,16 @@ export default new Router({
       path:'/personalcenter/equitycard/EquityCard',
       name:'EquityCard',
       component:EquityCard
+    },
+    {
+      path:'/personalcenter/balance/Balance',
+      name:'Balance',
+      component:Balance
+    },
+    {
+      path:'/personalcenter/integral/Integral',
+      name:'Integral',
+      component:Integral
     },
     {
       path:'/new/New',

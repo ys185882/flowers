@@ -74,12 +74,16 @@
 						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/yue.png" alt="">
-						<div>余额</div>
+						<router-link to="/personalcenter/balance/Balance">
+							<img src="../../assets/personalcenter/yue.png" alt="">
+							<div>余额</div>
+						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/zuanshi.png" alt="">
-						<div>会员积分</div>
+						<router-link to="/personalcenter/integral/Integral">
+							<img src="../../assets/personalcenter/zuanshi.png" alt="">
+							<div>会员积分</div>
+						</router-link>
 					</el-col>
 				</el-row>
 			</div>
