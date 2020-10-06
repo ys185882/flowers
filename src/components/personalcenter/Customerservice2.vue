@@ -1,6 +1,6 @@
 <template>
 	<div class="Box">
-		<div class="Customerservice">
+		<div class="Customerservice2">
 			<nav>
 				<el-row>
 					<el-col :span="4">
@@ -20,16 +20,16 @@
 			      <transition name="el-fade-in-linear">
 			        <div v-show="show" class="transition-box">
 			        	<div class="list">
-									<router-link to="/components/Home">
+									<router-link to="/components/Home2">
 										<div class="home"><i class="el-icon-house"></i>首页</div>
 									</router-link>
-									<router-link to="/classification/Classs">
+									<router-link to="/classification/Classs2">
 										<div class="classs"><i class="el-icon-search"></i>分类搜索</div>
 									</router-link>
-									<router-link to="/shoppingcar/ShoppingCar">
+									<router-link to="/shoppingcar/ShoppingCar2">
 									<div class="shoppingcar"><i class="el-icon-shopping-cart-2"></i>购物车</div>
 									</router-link>
-									<router-link to="/personalcenter/PersonalCenter">
+									<router-link to="/personalcenter/PersonalCenter2">
 										<div class="personal"><i class="el-icon-user"></i>我的</div>
 									</router-link>
 								</div>
@@ -78,7 +78,7 @@
 </template>
 <script>
 export default{
-	name: 'Customerservice',
+	name: 'Customerservice2',
 		data:() => ({
 			show:false
 		}),
@@ -92,7 +92,7 @@ export default{
 <style scoped lang="less">
 	.Box{
 		background-color:#e9ecf0;
-		.Customerservice{
+		.Customerservice2{
 			height:100%;
 			margin:auto;
 			max-width:640px;

@@ -1,6 +1,6 @@
 <template>
 	<div class="Box">
-		<div class="integral">
+		<div class="collect">
 			<nav>
 				<el-row>
 					<el-col :span="4">
@@ -11,7 +11,7 @@
 						</div>
 					</el-col>
 					<el-col :span="16">
-						<span>积分</span>
+						<span>生日/纪念日提醒</span>
 					</el-col>
 					<el-col :span="4">
 						<el-button @click="show = !show" class="elbtn">
@@ -39,33 +39,14 @@
 				</el-row>
 			</nav>
 			<section>
-				<div class="boxs">
-						积分规则
-				</div>
-				<p>300<span>积分</span></p>
-				<p class="num">积分兑换</p>
+				<img src="../../../assets/collect/1.png" alt="">
+				<p>哦噢!～你还没有收藏的商品</p>
 			</section>
 			<footer>
-				<div class="bosx">
-					<el-row>
-						<el-col :span="23">
-							<span>积分明细</span>
-						</el-col>
-						<el-col :span="1">
-							<i class="el-icon-arrow-right"></i>
-						</el-col>
-					</el-row>
-				</div>
-				<div class="boxss">
-					<el-row>
-						<el-col :span="21">
-							<span>完善个人资料赠送积分</span>
-							<div class="time">2020/9/22 11：06：09</div>
-						</el-col>
-						<el-col :span="3">
-							<p>+300</p>
-						</el-col>
-					</el-row>
+				<nav>为你推荐</nav>
+				<div v-for="n in 10">
+					<img src="../../../assets/meiguihua.jpg" alt="">
+					<p>￥239</p>
 				</div>
 			</footer>
 		</div>
@@ -73,7 +54,7 @@
 </template>
 <script>
 	export default{
-		name:'Integral',
+		name:'Collect',
 		data:() => ({
 			show:false
 		}),
@@ -85,26 +66,27 @@
 	}
 </script>
 <style scoped lang="less">
-	.Box{
+		.Box{
 	 	padding-bottom:50px;
 	 	background-color:#e9ecf0;
-	 	.integral{
+	 	.collect{
 	 		max-width:640px;
 	 		margin:auto;
+			background-color:white;
 		 	.elbtn{
 		 		padding:0;
 		 		border:none;
-		 		background-color:white;
+		 		background-color:#f9f9f9;
 		 		color:black;
 		 	}
 			nav{
-				background-color:white;
 				margin:auto;
 				max-width: 640px;
 				text-align: center;
 				font-size:1.5rem;
 				padding:20px 0;
 				line-height: 50%;
+	 			background-color:#f9f9f9;
 				.list{
 					font-size: 15px;
 					width:180px;
@@ -122,51 +104,39 @@
 						padding:20px;
 					}
 				}
+				span{
+					font-size: 1rem;
+				}
 				i{
-					font-size:2rem;
-					line-height: 50%;
+					font-size:1.3rem;
 				}
 			}
 			section{
-				color:white;
-				background-color:#fe7800;
-				.boxs{
-					padding:10px 10px 0px 20px;
-					text-align:right;
-					font-size:0.8rem;
+				text-align:center;
+				img{
+					width:80%;
 				}
 				p{
-					padding:10px 10px 10px 20px;
-					text-align:left;
-					font-size:3rem;
-					span{
-							font-size:1.2rem;
-					}
-				}
-				.num{
-					margin-top: 20px;
-					font-size: 0.9rem;
-					text-align:center;
-					background-color:#fe6600;
-					padding:10px;
+					font-size: 14px;
+					margin-bottom: 30px;
+					margin-top:15px;
 				}
 			}
 			footer{
-				background-color:white;
-				.bosx{
-					padding:10px;
-					border-bottom:1px solid #e4e4e4;
+				height:150px;
+				padding:0 10px;
+				border-top:4px solid #eeeeee;
+				nav{
+					font-size: 1.1rem;
+					text-align:left;
+					background-color:white;
 				}
-				.boxss{
-					padding:10px;
-					font-size: 0.8rem;
-					.time{
-						color:#bcbcbc;
-					}
-					p{
-						padding:10px;
-						color:#ff6600;
-						font-size:1.2rem;
+				div{
+					display:inline-block;
+					text-align:center;
+					width:60px;
+					img{
+						width:60px;
 					}
 				}
 			}

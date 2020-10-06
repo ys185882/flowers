@@ -1,6 +1,6 @@
 <template>
 	<div class="Box">
-		<div class="media">
+		<div class="media2">
 			<nav>
 				<el-row>
 					<el-col :span="4">
@@ -20,16 +20,16 @@
 			      <transition name="el-fade-in-linear">
 			        <div v-show="show" class="transition-box">
 			        	<div class="list">
-									<router-link to="/components/Home">
+									<router-link to="/components/Home2">
 										<div class="home"><i class="el-icon-house"></i>首页</div>
 									</router-link>
-									<router-link to="/classification/Classs">
+									<router-link to="/classification/Classs2">
 										<div class="classs"><i class="el-icon-search"></i>分类搜索</div>
 									</router-link>
-									<router-link to="/shoppingcar/ShoppingCar">
+									<router-link to="/shoppingcar/ShoppingCar2">
 									<div class="shoppingcar"><i class="el-icon-shopping-cart-2"></i>购物车</div>
 									</router-link>
-									<router-link to="/personalcenter/PersonalCenter">
+									<router-link to="/personalcenter/PersonalCenter2">
 										<div class="personal"><i class="el-icon-user"></i>我的</div>
 									</router-link>
 								</div>
@@ -66,22 +66,22 @@
 	    <div class="Footer">
 	      <el-row>
 	        <el-col :span="6">
-	          <router-link to="/personalcenter/about/About" class="Links">
+	          <router-link to="/personalcenter/about/About2" class="Links">
 	            <p>关于我们</p>
 	          </router-link>
 	        </el-col>
 	        <el-col :span="6">
-	          <router-link to="/personalcenter/about/Culture" class="Links">
+	          <router-link to="/personalcenter/about/Culture2" class="Links">
 	            <p>企业文化</p>
 	          </router-link>
 	        </el-col>
 	        <el-col :span="6">
-						<router-link to="/personalcenter/about/Dynamic" class="Links">
+						<router-link to="/personalcenter/about/Dynamic2" class="Links">
 							<p>公司动态</p>
 						</router-link>
 					</el-col>
 	        <el-col :span="6">
-	        	<router-link to="/personalcenter/about/Media" class="Media">
+	        	<router-link to="/personalcenter/about/Media2" class="Media">
 		          <p>媒体报道</p>
 	          </router-link>
 	        </el-col>
@@ -92,7 +92,7 @@
 </template>
 <script>
 export default{
-	name: 'Media',
+	name: 'Media2',
 	data(){
 		return {
 			show:false
@@ -109,7 +109,7 @@ export default{
 	.Box{
 		padding-bottom:170px;
 		background-color:white;
-		.media{
+		.media2{
 			height:100%;
 			margin:auto;
 			max-width:640px;

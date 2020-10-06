@@ -1,6 +1,6 @@
 <template>
 	<div class="Box">
-		<div class="integral">
+		<div class="set">
 			<nav>
 				<el-row>
 					<el-col :span="4">
@@ -11,7 +11,7 @@
 						</div>
 					</el-col>
 					<el-col :span="16">
-						<span>积分</span>
+						<span>设置</span>
 					</el-col>
 					<el-col :span="4">
 						<el-button @click="show = !show" class="elbtn">
@@ -39,41 +39,32 @@
 				</el-row>
 			</nav>
 			<section>
-				<div class="boxs">
-						积分规则
+				<div class="person">
+					个人资料
+					<i class="el-icon-arrow-right"></i>
 				</div>
-				<p>300<span>积分</span></p>
-				<p class="num">积分兑换</p>
+				<div class="account">
+					账号和绑定
+					<i class="el-icon-arrow-right"></i>
+				</div>
+				<div class="pwd">
+					修改密码
+					<i class="el-icon-arrow-right"></i>
+				</div>
+				<div class="suggest">
+					反馈建议
+					<i class="el-icon-arrow-right"></i>
+				</div>
 			</section>
 			<footer>
-				<div class="bosx">
-					<el-row>
-						<el-col :span="23">
-							<span>积分明细</span>
-						</el-col>
-						<el-col :span="1">
-							<i class="el-icon-arrow-right"></i>
-						</el-col>
-					</el-row>
-				</div>
-				<div class="boxss">
-					<el-row>
-						<el-col :span="21">
-							<span>完善个人资料赠送积分</span>
-							<div class="time">2020/9/22 11：06：09</div>
-						</el-col>
-						<el-col :span="3">
-							<p>+300</p>
-						</el-col>
-					</el-row>
-				</div>
+				<button>退出</button>
 			</footer>
 		</div>
 	</div>
 </template>
 <script>
 	export default{
-		name:'Integral',
+		name:'Set',
 		data:() => ({
 			show:false
 		}),
@@ -88,7 +79,7 @@
 	.Box{
 	 	padding-bottom:50px;
 	 	background-color:#e9ecf0;
-	 	.integral{
+	 	.set{
 	 		max-width:640px;
 	 		margin:auto;
 		 	.elbtn{
@@ -128,46 +119,58 @@
 				}
 			}
 			section{
-				color:white;
-				background-color:#fe7800;
-				.boxs{
-					padding:10px 10px 0px 20px;
-					text-align:right;
-					font-size:0.8rem;
-				}
-				p{
-					padding:10px 10px 10px 20px;
-					text-align:left;
-					font-size:3rem;
-					span{
-							font-size:1.2rem;
+				.person{
+					padding:30px 20px;
+					font-size: 1.5rem;
+					background-color:white;
+					margin:20px;
+					border-radius:8px;
+					i{
+						float:right;
 					}
 				}
-				.num{
-					margin-top: 20px;
-					font-size: 0.9rem;
-					text-align:center;
-					background-color:#fe6600;
-					padding:10px;
+				.account{
+					padding:30px 20px;
+					font-size: 1.5rem;
+					background-color:white;
+					margin:20px;
+					border-radius:8px;
+					i{
+						float:right;
+					}
+				}
+				.pwd{
+					padding:30px 20px;
+					font-size: 1.5rem;
+					background-color:white;
+					margin:20px;
+					border-radius:8px;
+					i{
+						float:right;
+					}
+				}
+				.suggest{
+					padding:30px 20px;
+					font-size: 1.5rem;
+					background-color:white;
+					margin:20px;
+					border-radius:8px;
+					i{
+						float:right;
+					}
 				}
 			}
 			footer{
-				background-color:white;
-				.bosx{
-					padding:10px;
-					border-bottom:1px solid #e4e4e4;
-				}
-				.boxss{
-					padding:10px;
-					font-size: 0.8rem;
-					.time{
-						color:#bcbcbc;
-					}
-					p{
-						padding:10px;
-						color:#ff6600;
-						font-size:1.2rem;
-					}
+				margin-top: 60px;
+				text-align:center;
+				button{
+					background-color: #394d3f;
+					color:white;
+					border-radius:5px;
+					padding:15px 120px;
+					font-size: 1.5rem;
+					border:none;
+					outline:none;
 				}
 			}
 		}

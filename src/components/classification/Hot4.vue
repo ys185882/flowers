@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="box">
 		<div class="photo">
 			<img src="/static/lunbotu/5.jpg" alt="">
 		</div>
@@ -47,5 +47,9 @@ export default{
 		div{
 			color:black;
 		}
+	}
+	.box{
+		height:500px;
+		overflow: auto;
 	}
 </style>

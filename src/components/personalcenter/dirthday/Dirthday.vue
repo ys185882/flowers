@@ -1,6 +1,6 @@
 <template>
 	<div class="Box">
-		<div class="integral">
+		<div class="dirthday">
 			<nav>
 				<el-row>
 					<el-col :span="4">
@@ -11,7 +11,7 @@
 						</div>
 					</el-col>
 					<el-col :span="16">
-						<span>积分</span>
+						<span>生日/纪念日提醒</span>
 					</el-col>
 					<el-col :span="4">
 						<el-button @click="show = !show" class="elbtn">
@@ -39,41 +39,17 @@
 				</el-row>
 			</nav>
 			<section>
-				<div class="boxs">
-						积分规则
-				</div>
-				<p>300<span>积分</span></p>
-				<p class="num">积分兑换</p>
+				<img src="../../../assets/dirthday/1.jpg" alt="">
 			</section>
 			<footer>
-				<div class="bosx">
-					<el-row>
-						<el-col :span="23">
-							<span>积分明细</span>
-						</el-col>
-						<el-col :span="1">
-							<i class="el-icon-arrow-right"></i>
-						</el-col>
-					</el-row>
-				</div>
-				<div class="boxss">
-					<el-row>
-						<el-col :span="21">
-							<span>完善个人资料赠送积分</span>
-							<div class="time">2020/9/22 11：06：09</div>
-						</el-col>
-						<el-col :span="3">
-							<p>+300</p>
-						</el-col>
-					</el-row>
-				</div>
+				<button>+添加提醒</button>
 			</footer>
 		</div>
 	</div>
 </template>
 <script>
 	export default{
-		name:'Integral',
+		name:'Dirthday',
 		data:() => ({
 			show:false
 		}),
@@ -85,16 +61,17 @@
 	}
 </script>
 <style scoped lang="less">
-	.Box{
+		.Box{
 	 	padding-bottom:50px;
 	 	background-color:#e9ecf0;
-	 	.integral{
+	 	.dirthday{
 	 		max-width:640px;
 	 		margin:auto;
+			background-color:white;
 		 	.elbtn{
 		 		padding:0;
 		 		border:none;
-		 		background-color:white;
+		 		background-color:#ff6600;
 		 		color:black;
 		 	}
 			nav{
@@ -105,6 +82,7 @@
 				font-size:1.5rem;
 				padding:20px 0;
 				line-height: 50%;
+	 			background-color:#ff6600;
 				.list{
 					font-size: 15px;
 					width:180px;
@@ -122,52 +100,36 @@
 						padding:20px;
 					}
 				}
+				span{
+					color:white;
+				}
 				i{
 					font-size:2rem;
-					line-height: 50%;
+					color:white;
 				}
 			}
 			section{
-				color:white;
-				background-color:#fe7800;
-				.boxs{
-					padding:10px 10px 0px 20px;
-					text-align:right;
-					font-size:0.8rem;
-				}
-				p{
-					padding:10px 10px 10px 20px;
-					text-align:left;
-					font-size:3rem;
-					span{
-							font-size:1.2rem;
-					}
-				}
-				.num{
-					margin-top: 20px;
-					font-size: 0.9rem;
-					text-align:center;
-					background-color:#fe6600;
-					padding:10px;
+				img{
+					width:100%;
 				}
 			}
 			footer{
+				text-align:center;
+				border:1px solid #dddddd;
+				padding:10px 0;
+				width:100%;
+				position:fixed;
+				bottom:0;
 				background-color:white;
-				.bosx{
-					padding:10px;
-					border-bottom:1px solid #e4e4e4;
-				}
-				.boxss{
-					padding:10px;
-					font-size: 0.8rem;
-					.time{
-						color:#bcbcbc;
-					}
-					p{
-						padding:10px;
-						color:#ff6600;
-						font-size:1.2rem;
-					}
+				button{
+					width:80%;
+					background-color:#fe6d0c;
+					padding:10px 0;
+					font-size: 1.1rem;
+					color:white;
+					border:none;
+					outline:none;
+					border-radius:5px;
 				}
 			}
 		}

@@ -90,16 +90,22 @@
 			<div class="Two">
 				<el-row>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/dizhi.png" alt="">
-						<div>收货地址</div>
+						<router-link to="/personalcenter/address/Address">
+							<img src="../../assets/personalcenter/dizhi.png" alt="">
+							<div>收货地址</div>
+						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/naozhong.png" alt="">
-						<div>生日纪念提醒</div>
+						<router-link to="/personalcenter/dirthday/Dirthday">
+							<img src="../../assets/personalcenter/naozhong.png" alt="">
+							<div>生日纪念提醒</div>
+						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/colle.png" alt="">
-						<div>我的收藏</div>
+						<router-link to="/personalcenter/collect/Collect">
+							<img src="../../assets/personalcenter/colle.png" alt="">
+							<div>我的收藏</div>
+						</router-link>
 					</el-col>
 					<el-col :span="6">
 						<img src="../../assets/personalcenter/biao.png" alt="">
@@ -140,20 +146,28 @@
 			<div class="Ft">
 				<el-row class="ft">
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/kefu.png" alt="">
-						<div>联系客服</div>
+						<router-link to="/personalcenter/Customerservice">
+							<img src="../../assets/personalcenter/kefu.png" alt="">
+							<div>联系客服</div>
+						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/help.png" alt="">
-						<div>帮助中心</div>
+						<router-link to="/personalcenter/help/Help">
+							<img src="../../assets/personalcenter/help.png" alt="">
+							<div>帮助中心</div>
+						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/guanyu.png" alt="">
-						<div>关于花礼</div>
+						<router-link to="/personalcenter/about/About">
+							<img src="../../assets/personalcenter/guanyu.png" alt="">
+							<div>关于花礼</div>
+						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<img src="../../assets/personalcenter/shezhi.png" alt="">
-						<div>设置</div>
+						<router-link to="/personalcenter/set/Sets">
+							<img src="../../assets/personalcenter/shezhi.png" alt="">
+							<div>设置</div>
+						</router-link>
 					</el-col>
 				</el-row>
 			</div>
@@ -174,7 +188,10 @@ export default{
 	 .Box{
 	 	padding-bottom:50px;
 	 	background-color:#e9ecf0;
-	 }
+	 	a{
+	 		color:black;
+	 	}
+	}
 	nav{
 		background-color:white;
 		margin:auto;
@@ -241,9 +258,6 @@ export default{
 					font-size: 20px;
 					padding:20px;
 					text-align:center;
-					a{
-						color:black;
-					}
 				}
 			}
 		}

@@ -32,10 +32,15 @@ import OnlineMessage from '@/components/personalcenter/OnlineMessage'
 import consult from '@/components/personalcenter/consult'
 import proposal from '@/components/personalcenter/proposal'
 import About from '@/components/personalcenter/about/About'
+import About2 from '@/components/personalcenter/about/About2'
 import Culture from '@/components/personalcenter/about/Culture'
 import Dynamic from '@/components/personalcenter/about/Dynamic'
 import Media from '@/components/personalcenter/about/Media'
 import Approval from '@/components/personalcenter/about/Approval'
+import Culture2 from '@/components/personalcenter/about/Culture2'
+import Dynamic2 from '@/components/personalcenter/about/Dynamic2'
+import Media2 from '@/components/personalcenter/about/Media2'
+import Approval2 from '@/components/personalcenter/about/Approval2'
 import Coupon from '@/components/personalcenter/coupon/coupon'
 import Invalid from '@/components/personalcenter/coupon/Invalid'
 import Nouse from '@/components/personalcenter/coupon/Nouse'
@@ -49,6 +54,10 @@ import Evaluates from '@/components/personalcenter/order/Evaluates'
 import EquityCard from '@/components/personalcenter/equitycard/EquityCard'
 import Balance from '@/components/personalcenter/balance/Balance'
 import Integral from '@/components/personalcenter/integral/Integral'
+import Dirthday from '@/components/personalcenter/dirthday/Dirthday'
+import Address from '@/components/personalcenter/address/Address'
+import Collect from '@/components/personalcenter/collect/Collect'
+import Sets from '@/components/personalcenter/set/Sets'
 import New from '@/components/new/New'
 import Newflowers from '@/components/new/Newflowers'
 import Gift from '@/components/new/Gift'
@@ -246,6 +255,36 @@ export default new Router({
       component:Approval
     },
     {
+      path:'/personalcenter/about/About2',
+      name:'About2',
+      component:About2
+    },
+    {
+      path:'/personalcenter/about/Culture2',
+      name:'Culture2',
+      component:Culture2
+    },
+    {
+      path:'/personalcenter/about/Dynamic2',
+      name:'Dynamic2',
+      component:Dynamic2
+    },
+    {
+      path:'/personalcenter/about/Media2',
+      name:'Media2',
+      component:Media2
+    },
+    {
+      path:'/personalcenter/about/Approval2',
+      name:'Approval2',
+      component:Approval2
+    },
+    {
+      path:'/personalcenter/set/Sets',
+      name:'Sets',
+      component:Sets
+    },
+    {
       path:'/personalcenter/coupon/coupon',
       name:'Coupon',
       component:Coupon,
@@ -315,6 +354,21 @@ export default new Router({
       path:'/personalcenter/integral/Integral',
       name:'Integral',
       component:Integral
+    },
+    {
+      path:'/personalcenter/dirthday/Dirthday',
+      name:'Dirthday',
+      component:Dirthday
+    },
+    {
+      path:'/personalcenter/address/Address',
+      name:'Address',
+      component:Address
+    },
+    {
+      path:'/personalcenter/collect/Collect',
+      name:'Collect',
+      component:Collect
     },
     {
       path:'/new/New',

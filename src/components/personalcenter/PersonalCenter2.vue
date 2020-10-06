@@ -149,7 +149,7 @@
 			<div class="Ft">
 				<el-row class="ft">
 					<el-col :span="6">
-						<router-link to="/personalcenter/Customerservice">
+						<router-link to="/personalcenter/Customerservice2">
 							<img src="../../assets/personalcenter/kefu.png" alt="">
 							<div>联系客服</div>
 						</router-link>
@@ -161,7 +161,7 @@
 						</router-link>
 					</el-col>
 					<el-col :span="6">
-						<router-link to="/personalcenter/about/About">
+						<router-link to="/personalcenter/about/About2">
 							<img src="../../assets/personalcenter/guanyu.png" alt="">
 							<div>关于花礼</div>
 						</router-link>

@@ -20,16 +20,16 @@
 			      <transition name="el-fade-in-linear">
 			        <div v-show="show" class="transition-box">
 			        	<div class="list">
-									<router-link to="/components/Home2">
+									<router-link to="/components/Home">
 										<div class="home"><i class="el-icon-house"></i>首页</div>
 									</router-link>
-									<router-link to="/classification/Classs2">
+									<router-link to="/classification/Classs">
 										<div class="classs"><i class="el-icon-search"></i>分类搜索</div>
 									</router-link>
-									<router-link to="/shoppingcar/ShoppingCar2">
+									<router-link to="/shoppingcar/ShoppingCar">
 									<div class="shoppingcar"><i class="el-icon-shopping-cart-2"></i>购物车</div>
 									</router-link>
-									<router-link to="/personalcenter/PersonalCenter2">
+									<router-link to="/personalcenter/PersonalCenter">
 										<div class="personal"><i class="el-icon-user"></i>我的</div>
 									</router-link>
 								</div>

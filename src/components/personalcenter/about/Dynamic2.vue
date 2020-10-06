@@ -1,6 +1,6 @@
 <template>
 	<div class="Box">
-		<div class="media">
+		<div class="dynamic2">
 			<nav>
 				<el-row>
 					<el-col :span="4">
@@ -11,7 +11,7 @@
 						</div>
 					</el-col>
 					<el-col :span="16">
-						<span>媒体报道</span>
+						<span>公司动态</span>
 					</el-col>
 					<el-col :span="4">
 						<el-button @click="show = !show" class="elbtn">
@@ -20,16 +20,16 @@
 			      <transition name="el-fade-in-linear">
 			        <div v-show="show" class="transition-box">
 			        	<div class="list">
-									<router-link to="/components/Home">
+									<router-link to="/components/Home2">
 										<div class="home"><i class="el-icon-house"></i>首页</div>
 									</router-link>
-									<router-link to="/classification/Classs">
+									<router-link to="/classification/Classs2">
 										<div class="classs"><i class="el-icon-search"></i>分类搜索</div>
 									</router-link>
-									<router-link to="/shoppingcar/ShoppingCar">
+									<router-link to="/shoppingcar/ShoppingCar2">
 									<div class="shoppingcar"><i class="el-icon-shopping-cart-2"></i>购物车</div>
 									</router-link>
-									<router-link to="/personalcenter/PersonalCenter">
+									<router-link to="/personalcenter/PersonalCenter2">
 										<div class="personal"><i class="el-icon-user"></i>我的</div>
 									</router-link>
 								</div>
@@ -45,12 +45,11 @@
 				<div class="logo" v-for="n in 10">
 					<div>
 						<router-link to="/personalcenter/about/Approval">
-							<h3>张杰深圳演唱会温情落幕 歌迷鲜花求婚感动全场</h3>
-							<header>2012年12月21日，新生代偶像张杰在深圳唱响“这，就是爱”首个生日演唱会。这场以爱为名的演唱会，给大家带来了真正的感动，尤其是当晚歌迷上演的求婚一幕。演唱会主办方事先委托中国鲜花礼品网定制了一束99枝玫瑰花束，作为求婚鲜花。</header>
+							<h3>花礼网再次获得国家集高新技术企业认定</h3>
 							<p>
 								<el-row>
 									<el-col :span="12" class="left">
-										<span>2012.12.25</span>
+										<span>2020.04.07</span>
 									</el-col>
 									<el-col :span="12" class="right">
 										<span>
@@ -66,22 +65,22 @@
 	    <div class="Footer">
 	      <el-row>
 	        <el-col :span="6">
-	          <router-link to="/personalcenter/about/About" class="Links">
+	          <router-link to="/personalcenter/about/About2" class="Links">
 	            <p>关于我们</p>
 	          </router-link>
 	        </el-col>
 	        <el-col :span="6">
-	          <router-link to="/personalcenter/about/Culture" class="Links">
+	          <router-link to="/personalcenter/about/Culture2" class="Links">
 	            <p>企业文化</p>
 	          </router-link>
 	        </el-col>
 	        <el-col :span="6">
-						<router-link to="/personalcenter/about/Dynamic" class="Links">
+						<router-link to="/personalcenter/about/Dynamic2" class="Dynamic">
 							<p>公司动态</p>
 						</router-link>
 					</el-col>
 	        <el-col :span="6">
-	        	<router-link to="/personalcenter/about/Media" class="Media">
+	        	<router-link to="/personalcenter/about/Media2" class="Links">
 		          <p>媒体报道</p>
 	          </router-link>
 	        </el-col>
@@ -92,7 +91,7 @@
 </template>
 <script>
 export default{
-	name: 'Media',
+	name: 'Dynamic2',
 	data(){
 		return {
 			show:false
@@ -109,7 +108,7 @@ export default{
 	.Box{
 		padding-bottom:170px;
 		background-color:white;
-		.media{
+		.dynamic2{
 			height:100%;
 			margin:auto;
 			max-width:640px;
@@ -168,11 +167,6 @@ export default{
 				width:90%;
 				padding:30px 0;
 				border-bottom:1px solid #e9ecf0;
-				header{
-					margin-top:10px;
-					color:#71797f;
-					font-size: 12px;
-				}
 				h3{
 					color:black;
 				}
@@ -201,7 +195,7 @@ export default{
 		    .el-col{
 		    	border:1px solid #e9ecf0;
 		    }
-		    .Media{
+		    .Dynamic{
 		    	color:#ff734c;
 		    }
 				p{
