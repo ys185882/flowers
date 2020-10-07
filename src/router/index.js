@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Home2 from '@/components/Home2'
+import HotSale from '@/components/HotSale'
 import LoveFlowers from '@/components/LoveFlowers'
 import LoveFlowers2 from '@/components/LoveFlowers2'
 import Evaluate from '@/components/Evaluate'
@@ -79,6 +80,11 @@ export default new Router({
       path: '/components/Home2',
       name: 'Home2',
       component: Home2
+    },
+    {
+      path: '/components/HotSale',
+      name: 'HotSale',
+      component: HotSale
     },
     {
       path: '/components/LoveFlowers',

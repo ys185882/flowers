@@ -45,21 +45,19 @@
 						<p>手机号</p>
 						<br>
 						<br>
-						<input type="text" placeholder="请输入手机号">
+						<input type="text" placeholder="请输入手机号" v-model="phones" class="phones">
 					</div>
 					<div class="yz">
 						<p>验证码</p>
 						<div class="yzs">
-							<input type="text" placeholder="请输入验证码">
-							<button>获取验证码</button>
+							<input type="text" placeholder="请输入验证码" v-model="yzm">
+							<button v-model="huoqu">{{huoqu}}</button>
 						</div>
 					</div>
 					<div class="register">
-						<router-link to="/components/Home">
-							<button>
-								<div>手机号登录/注册</div>
-							</button>
-						</router-link>
+						<button @click="signin">
+							<div>手机号登录/注册</div>
+						</button>
 					</div>
 					<div class="registertext">账号密码登录</div>
 				</form>
@@ -90,12 +88,29 @@
 export default{
 	name:'Register',
 	data:() => ({
-		show:false
+		show:false,
+		phones:'',
+		yzm:'',
+		huoqu:"获取验证码"
 	}),
 	methods:{
-	    back(){
-	        this.$router.go(-1);
-	    },
+    back(){
+      this.$router.go(-1);
+    },
+    signin(){
+    	if (this.phones.length==0) {
+    		this.$alert("请输入手机号");
+    	} else if (this.phones.length!=0) {
+    		var reg=/^1(3|4|5|6|7|8|9)\d{9}$/;
+    		if(!reg.test(this.phones)){
+    			this.$alert("请输入正确的手机号");
+    		} else if (this.yzm.length!=6){
+	    		this.$alert("请输入正确的验证码");
+	    	} else {
+	    		 this.$router.push('/components/Home')
+	    	}
+    	}
+    }
 	}
 }
 </script>

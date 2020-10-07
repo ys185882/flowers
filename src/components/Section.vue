@@ -60,11 +60,13 @@
 			<div class='hualan'>
 				<el-row>
 					<el-col :span="12">
-						<div>
-							<header>热销花篮</header>
-							<p>+月饼组合</p>
-							<aside>￥299</aside>
-						</div>
+						<router-link to="/components/HotSale">
+							<div>
+								<header>热销花篮</header>
+								<p>+月饼组合</p>
+								<aside>￥299</aside>
+							</div>
+						</router-link>
 					</el-col>
 					<el-col :span="12">
 						<img src="../assets/yb.jpg" alt="">
@@ -76,11 +78,13 @@
 			<div class='hualan'>
 				<el-row>
 					<el-col :span="12">
-						<div>
-							<header>热销花篮</header>
-							<p>+月饼组合</p>
-							<aside>￥299</aside>
-						</div>
+						<router-link to="/components/HotSale">
+							<div>
+								<header>热销花篮</header>
+								<p>+月饼组合</p>
+								<aside>￥299</aside>
+							</div>
+						</router-link>
 					</el-col>
 					<el-col :span="12">
 						<img src="../assets/yb.jpg" alt="">
@@ -94,11 +98,13 @@
 			<div class='hualan'>
 				<el-row>
 					<el-col :span="12">
-						<div>
-							<header>热销花篮</header>
-							<p>+月饼组合</p>
-							<aside>￥299</aside>
-						</div>
+						<router-link to="/components/HotSale">
+							<div>
+								<header>热销花篮</header>
+								<p>+月饼组合</p>
+								<aside>￥299</aside>
+							</div>
+						</router-link>
 					</el-col>
 					<el-col :span="12">
 						<img src="../assets/yb.jpg" alt="">
@@ -110,11 +116,13 @@
 			<div class='hualan'>
 				<el-row>
 					<el-col :span="12">
-						<div>
-							<header>热销花篮</header>
-							<p>+月饼组合</p>
-							<aside>￥299</aside>
-						</div>
+						<router-link to="/components/HotSale">
+							<div>
+								<header>热销花篮</header>
+								<p>+月饼组合</p>
+								<aside>￥299</aside>
+							</div>
+						</router-link>
 					</el-col>
 					<el-col :span="12">
 						<img src="../assets/yb.jpg" alt="">
@@ -180,6 +188,7 @@ export default{
 				div{
 					padding:6px;
 					header{
+						color:black;
 						font-size:25px;
 					}
 					p{
@@ -206,6 +215,7 @@ export default{
 				div{
 					padding:6px;
 					header{
+						color:black;
 						font-size:25px;
 					}
 					p{
@@ -232,6 +242,7 @@ export default{
 				div{
 					padding:6px;
 					header{
+						color:black;
 						font-size:25px;
 					}
 					p{
@@ -258,6 +269,7 @@ export default{
 				div{
 					padding:6px;
 					header{
+						color:black;
 						font-size:25px;
 					}
 					p{

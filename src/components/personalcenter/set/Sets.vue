@@ -57,7 +57,9 @@
 				</div>
 			</section>
 			<footer>
-				<button>退出</button>
+				<router-link to="/components/Home2">
+					<button>退出</button>
+				</router-link>
 			</footer>
 		</div>
 	</div>
