@@ -295,7 +295,9 @@
 						</div>
 					</el-col>
 					<el-col :span="7">
-						<div class="jr" @click="addToShoppingCar">加入购物车</div>
+						<router-link to="/purchase/Purchase">
+							<div class="jr">加入购物车</div>
+						</router-link>
 					</el-col>
 					<el-col :span="7">
 						<div class="buy">立即购买</div>
@@ -520,6 +522,7 @@
 					padding:30px 0;
 					background-color:white;
 					button{
+						outline:none;
 						border:1px solid black;
 						border-radius:5px;
 						padding:7px 10px;

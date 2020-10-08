@@ -6,7 +6,9 @@
 					<button>企业团购</button>
 				</el-col>
 				<el-col :span="6">
-					<button>设计师款</button>
+					<router-link to="/DesignerSelector/DesignerSelector">
+						<button>设计师款</button>
+					</router-link>
 				</el-col>
 				<el-col :span="6">
 					<button>同城鲜花</button>
@@ -27,7 +29,9 @@
 					<button>常见问题</button>
 				</el-col>
 				<el-col :span="6">
-					<button>关于我们</button>
+					<router-link to="/personalcenter/about/About">
+						<button>关于我们</button>
+					</router-link>
 				</el-col>
 			</el-row>
 			<br>

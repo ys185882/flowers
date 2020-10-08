@@ -53,14 +53,16 @@
 		name: 'Evaluate',
 		data: () => ({
 			show:false,
-			count:0
+			count:4
 		}),
 		methods: {
 	    back () {
 	       this.$router.go(-1);
 	    },
 	    load () {
-	      this.count += 2
+	    	if(this.$el.scrollTop+this.$el.offsetHeight>this.$el.scrollHeight){
+	    		this.count += 2
+	    	}
 	    }
 		}
 	}

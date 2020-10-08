@@ -1,6 +1,6 @@
 <template>
 	 <div class="Box">
-	 	<div class="registerbox">
+	 	<div class="registerbox2">
 	 		<nav>
 				<el-row>
 					<el-col :span="4">
@@ -49,9 +49,9 @@
 							<input type="text" placeholder="请输入手机号" v-model="phones" class="phones">
 						</div>
 						<div class="yz">
-							<p>验证码</p>
+							<p>密码</p>
 							<div class="yzs">
-								<input type="text" placeholder="请输入验证码" v-model="yzm">
+								<input type="password" placeholder="请输入密码" v-model="yzm">
 								<button v-model="huoqu" type="button">{{huoqu}}</button>
 							</div>
 						</div>
@@ -60,8 +60,8 @@
 								<div>手机号登录/注册</div>
 							</button>
 						</div>
-						<router-link to="/register/register2">
-							<div class="registertext">账号密码登录</div>
+						<router-link to="/">
+							<div class="registertext">手机短信登录</div>
 						</router-link>
 					</form>
 				</section>
@@ -90,12 +90,12 @@
 </template>
 <script>
 export default{
-	name:'Register',
+	name:'Register2',
 	data:() => ({
 		show:false,
 		phones:'',
 		yzm:'',
-		huoqu:"获取验证码"
+		huoqu:"忘记密码"
 	}),
 	methods:{
     back(){
@@ -108,10 +108,14 @@ export default{
     		var reg=/^1(3|4|5|6|7|8|9)\d{9}$/;
     		if(!reg.test(this.phones)){
     			this.$alert("请输入正确的手机号");
-    		} else if (this.yzm.length!=6){
-	    		this.$alert("请输入正确的验证码");
-	    	} else {
-	    		 this.$router.push('/components/Home')
+    		} else if (this.yzm.length==0){
+	    		this.$alert("请输入密码");
+	    	} else if (this.yzm.length!=0) {
+	    		if (this.yzm != 123456){
+	    			this.$alert("请输入正确的密码");
+	    		} else {
+	    		 this.$router.push('/components/Home');
+	    		}
 	    	}
     	}
     }
@@ -122,7 +126,7 @@ export default{
 	.Box{
 		background-color:white;
 		width:100%;
-		.registerbox{
+		.registerbox2{
 			max-width: 640px;
 			margin:auto;
 		}

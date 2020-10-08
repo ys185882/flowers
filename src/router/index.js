@@ -23,11 +23,13 @@ import Hot12 from '@/components/classification/Hot12'
 import Hot13 from '@/components/classification/Hot13'
 import Hot14 from '@/components/classification/Hot14'
 import Search from '@/components/classification/Search'
+import Purchase from '@/components/purchase/Purchase'
 import ShoppingCar from '@/components/shoppingcar/ShoppingCar'
 import ShoppingCar2 from '@/components/shoppingcar/ShoppingCar2'
 import PersonalCenter from '@/components/personalcenter/PersonalCenter'
 import PersonalCenter2 from '@/components/personalcenter/PersonalCenter2'
-import Register from '@/components/register/Register'
+import Register from '@/components/register/register'
+import Register2 from '@/components/register/register2'
 import Customerservice from '@/components/personalcenter/Customerservice'
 import OnlineMessage from '@/components/personalcenter/OnlineMessage'
 import consult from '@/components/personalcenter/consult'
@@ -196,6 +198,11 @@ export default new Router({
       path:'/shoppingcar/ShoppingCar',
       name:'ShoppingCar',
       component:ShoppingCar
+    },
+    {
+      path:'/purchase/Purchase',
+      name:'Purchase',
+      component:Purchase
     },
     {
       path:'/shoppingcar/ShoppingCar2',
@@ -418,6 +425,11 @@ export default new Router({
       path:'/',
       name:'Register',
       component:Register
+    },
+    {
+      path:'/register/register2',
+      name:'Register2',
+      component:Register2
     }
   ]
 })
