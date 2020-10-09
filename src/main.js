@@ -7,6 +7,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import wcSwiper from 'wc-swiper'
 import 'wc-swiper/style.css'
+import store from './store'
 
 Vue.use(wcSwiper);
 Vue.use(ElementUI);
@@ -16,6 +17,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

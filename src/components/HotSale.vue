@@ -37,14 +37,14 @@
 			      </transition>
 					</el-col>
 				</el-row>
-				<div class="titbox">
-					<img src="../assets/hotsale/1.jpg" alt="">
+				<div class="titbox" v-for="n in shoplist">
+					<img :src="n.img" alt="">
 					<div class="tit">
-						<span>留住好时光+月饼礼盒-手提花篮+月饼礼盒</span>
+						<span>{{n.name}}</span>
 						<i class="el-icon-star-off"></i>
 					</div>
 					<div class="money">
-						<b>￥299</b>
+						<b>￥{{n.price}}</b>
 						<s>￥376</s>
 						<span>已售419件</span>
 					</div>
@@ -308,7 +308,9 @@
 	</div>
 </template>
 <script>
+	import {mapGetters} from 'vuex'
 	export default{
+
 		name:'HotSale',
 		data:() => ({
 			show:false
@@ -317,7 +319,10 @@
 	    back(){
 	      this.$router.go(-1);
 	    }
-		}
+		},
+		computed: {
+     ...mapGetters(['shoplist']) //这是数组['A,’B’,...]
+   }
 	}
 </script>
 <style scoped lang="less">
@@ -366,9 +371,10 @@
 					width:50%;
 				}
 				.titbox{
+					width:100%;
 					text-align:left;
 					img{
-						width:100%;
+						width:640px;
 					}
 					.tit{
 						padding:30px;
